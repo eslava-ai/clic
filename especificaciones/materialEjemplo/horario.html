@@ -1,0 +1,3143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://docent.edu.gva.es/md-front/www/#centre/46018761/horari -->
+<html lang="es-ES" style="" class=" js flexbox flexboxlegacy hashchange backgroundsize boxshadow textshadow opacity cssanimations cssgradients csstransforms csstransitions fontface generatedcontent localstorage svg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- v.1.2.7 -->
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>APP Docents - Generalitat Valenciana</title>
+
+	<!--[if IE]><link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"><![endif]-->
+	<link rel="apple-touch-icon-precomposed" href="https://docent.edu.gva.es/md-front/www/imgs/favicon-apple.png">
+	<link rel="icon" href="https://docent.edu.gva.es/md-front/www/imgs/favicon.png">
+	
+	<link href="./horario_files/css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" media="screen" href="./horario_files/imc-app-docents-form.css">
+	<link rel="stylesheet" media="screen" href="./horario_files/imc-app-docents-pes.css">
+	<link rel="stylesheet" media="screen" href="./horario_files/imc-app-docents-alertes.css">
+	<link rel="stylesheet" media="screen" href="./horario_files/imc-app-docents-marc.css">
+	
+	<link rel="stylesheet" media="screen" href="./horario_files/imc-app-do-critic.css">
+
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" media="screen" href="css/imc-app-do-no-compatible.css" />
+	<![endif]-->
+	
+	<script src="./horario_files/stretchy.js.descarga"></script><link href="./horario_files/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css"><script src="./horario_files/cordova.js.descarga"></script>
+	<script src="./horario_files/modernizr.js.descarga"></script>
+	<script src="./horario_files/jquery-2.2.4.min.js.descarga"></script>
+	<script>
+	/*
+		if (Modernizr && (!Modernizr.svg || !Modernizr.boxshadow || !Modernizr.cssanimations || !Modernizr.flexbox)) {
+			$("head").append('<link rel="stylesheet" media="screen" href="css/imc-app-do-no-compatible.css" />');
+		}
+	*/
+	</script>
+
+	<script src="./horario_files/imc-inicia.js.descarga"></script>
+	<script src="./horario_files/cordova-download.js.descarga"></script>
+<style>
+  .imageye-selected {
+    outline: 2px solid black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  }
+</style><link rel="stylesheet" media="screen" href="./horario_files/imc-app-do.css"></head>
+
+<body>
+
+	<div class="imc-contenidor imc-app-escriptori imc-co-marc" id="imc-contenidor">
+		
+		<div class="imc-itaca-logo" id="imc-itaca-logo" title="Itaca" style="width: 5em; height: 5em; margin-left: 0px; top: 2em; left: 1.5em;"></div>
+		
+		<!-- alertes -->
+		<div class="imc-alertes imc-amaga-al-entrar-seccio" id="imc-alertes">
+		
+			<!-- carrega -->
+			<div class="imc-alerta imc-alerta-ocupada" id="imc-alerta-ocupada" data-tipus="ocupada">
+				<div class="imc-al-contenidor">
+					<div class="imc-itaca-carrega"></div>
+					<header><p>Cargando datos...</p></header>
+					<p>Espere un momento, por favor</p>
+				</div>
+			</div>
+			
+		
+<!-- missatge -->
+<div class="imc-alerta imc-alerta-missatge" id="imc-alerta-missatge" data-tipus="missatge" tabindex="0">
+	<div class="imc-al-contenidor">
+		<header><p></p></header>
+		<p></p>
+		<ul>
+			<li><a href="javascript:;" class="imc-bt-text imc-bt-accepta" role="button">Acepte</a></li>
+			<li><a href="javascript:;" class="imc-bt-text imc-bt-cancela" role="button">Cancele</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- missatge flotant -->
+<div class="imc-alerta-flotant" id="imc-alerta-flotant" data-tipus="flotant" tabindex="0">
+	<div class="imc-al-contenidor">
+		<p></p>
+		<ul>
+			<li>
+				<a href="javascript:;" class="imc-bt-icona" role="button">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+							<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+						</g>
+					</svg>
+					<span class="imc-bt-accepta">Acepte</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div></div>
+		
+		<!-- moduls -->
+		<div class="imc-moduls" id="imc-moduls">
+<!-- comportaments -->
+<section class="imc-modul imc-modul-comportaments imc-mo-co" id="imc-modul-comportaments" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-comp-dialeg">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar Comportamientos" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-comp-dialeg">Comportamientos</h1>
+			<ul>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-finalitza" data-tabula="si">Guarda y notifica</a>
+				</li>
+			</ul>
+			<p>Escoja los que crea oportunos.</p>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+			<ul class="imc-comportaments imc-comp">
+				<!-- contingut dinamic -->
+			</ul>
+		
+		</div>
+		
+	</div>
+</section>
+
+<!-- agenda escolar modificacio -->
+<section class="imc-modul imc-modul-agenda-escolar imc-mo-ag-es" id="imc-modul-agenda-escolar" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-ag-es-dialeg">
+	<div class="imc-modul-contenidor">
+		
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-ag-es-dialeg">Detalle de la actividad</h1>
+			<ul>
+				<li class="imc-esborra">
+					<a href="javascript:;" class="imc-bt-text imc-bt-esborra" data-tabula="si">Borra</a>
+				</li>
+				<li class="imc-modifica">
+					<a href="javascript:;" class="imc-bt-text imc-bt-modifica" data-tabula="si">Modifica</a>
+				</li>
+				<li class="imc-guarda">
+					<a href="javascript:;" class="imc-bt-text imc-bt-guarda" data-tabula="si">Guarda</a>
+				</li>
+				<li class="imc-cancela">
+					<a href="javascript:;" class="imc-bt-text imc-bt-cancela" data-tabula="si">Cancele</a>
+				</li>
+				<li class="imc-activa">
+					<a href="javascript:;" class="imc-bt-text imc-bt-activa" data-tabula="si">Activa</a>
+				</li>
+			</ul>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+			<form>
+				<!-- contingut dinamic -->
+			</form>
+		
+		</div>
+		
+	</div>
+</section>
+
+<!-- sincro detall -->
+<section class="imc-modul imc-modul-sincro-detall imc-mo-sd" id="imc-modul-sincro-detall" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-sincro-dialeg">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-sincro-dialeg">Detalle de la sincronización</h1>
+			<div class="imc-data"></div>
+			<div class="imc-dades"></div>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+			<div class="imc-sincro-detall">
+				<!-- contingut dinamic -->
+			</div>
+		
+		</div>
+		
+	</div>
+</section>
+
+<!-- alumnes comunicacio -->
+<section class="imc-modul imc-modul-comunicacio-alumnes imc-modul-co-al imc-mo-sd" id="imc-modul-comunicacio-alumnes" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-com-al-dialeg">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-com-al-dialeg">Escoja alumnos</h1>
+			<ul>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-finalitza" data-tabula="si">Finaliza</a>
+				</li>
+			</ul>
+			<p>Escoja los que crea oportunos.</p>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+			<ul class="imc-grup-alumnes imc-mo-al">
+				<!-- contingut dinamic -->
+			</ul>
+		
+		</div>
+		
+	</div>
+</section>
+
+<!-- comunicacio detall -->
+<section class="imc-modul imc-modul-comunicacio-detall imc-modul-co-de imc-mo-sd" id="imc-modul-comunicacio-detall" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-com-detalls-dialeg">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-com-detalls-dialeg">Detalle de la comunicación</h1>
+			<ul>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-arxiva" data-tabula="si">Archiva</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-contesta" data-tabula="si">Conteste</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-justifica" data-tabula="si">Justifica</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-cancela" data-tabula="si">Cancele</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-envia" data-tabula="si">Envíe</a>
+				</li>
+			</ul>
+		</header>
+		
+		<div class="imc-mo-contingut">
+			
+			<div class="imc-mo-co-detall">
+				<!-- contingut dinamic -->
+			</div>
+
+			<div class="imc-co-contestacio">
+				<label for="imc_f_comunicacio_contestacio">Respuesta</label>
+				<textarea id="imc_f_comunicacio_contestacio" name="imc_f_comunicacio_contestacio" cols="5" maxlength="4000" data-tabula="si" aria-required="true" style="height: 59px;"></textarea>
+			</div>
+
+		</div>
+		
+	</div>
+</section>
+
+<!-- comunicacio contesta -->
+<section class="imc-modul imc-modul-comunicacio-contesta imc-modul-co-co imc-mo-sd" id="imc-modul-comunicacio-contesta" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-com-cont-dialeg">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-com-cont-dialeg">Responda a la comunicación</h1>
+			<ul>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-contesta" data-tabula="si">Envíe</a>
+				</li>
+			</ul>
+			<p>&nbsp;</p>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+			<label for="imc_f_comunicacio_contestacio">Respuesta</label>
+			<textarea id="imc_f_comunicacio_contestacio" name="imc_f_comunicacio_contestacio" cols="5" maxlength="1000" aria-required="true" style="height: 59px;"></textarea>
+		
+		</div>
+		
+	</div>
+</section>
+
+<!-- tasques menu -->
+<section class="imc-modul imc-modul-tasques-menu imc-mo-ta-me" id="imc-modul-tasques-menu" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-tasc-menu-dialeg">
+	<div class="imc-modul-contenidor">
+		
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-tasc-menu-dialeg">Opciones de menú</h1>
+		</header>
+		
+		<div class="imc-mo-contingut">
+			
+			<div class="imc-sessio-dades"></div>
+
+			<div class="imc-menu-amb imc-menu-amb-sessio">
+				<p>Con la sesión</p>
+				<ul>
+					<li>
+						<a href="https://docent.edu.gva.es/md-front/www/" data-href="/tasques/diaries" class="imc-bt-tasques-diaries" data-tabula="si">
+							<div class="imc-icona">
+								<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+									<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+										<path d="M630 1204 c-42 -15 -63 -32 -97 -81 l-36 -53 -106 0 c-186 0 -181 14 -181 -477 0 -340 2 -382 18 -413 34 -68 45 -70 430 -70 368 0 392 3 426 51 14 21 16 71 16 437 l0 414 -29 29 c-29 29 -31 29 -139 29 l-110 0 -36 50 c-19 27 -46 56 -58 64 -27 17 -77 27 -98 20z m-190 -284 c0 -38 4 -52 19 -60 21 -11 360 -14 399 -4 19 6 22 13 22 61 l0 54 58 -3 57 -3 3 -255 2 -255 -117 -118 -117 -117 -223 0 -223 0 0 375 0 375 60 0 60 0 0 -50z"></path>
+										<path d="M440 705 l0 -35 220 0 220 0 0 35 0 35 -220 0 -220 0 0 -35z"></path>
+										<path d="M440 555 l0 -35 220 0 220 0 0 35 0 35 -220 0 -220 0 0 -35z"></path>
+										<path d="M440 410 l0 -30 145 0 145 0 0 30 0 30 -145 0 -145 0 0 -30z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="imc-dades">
+								<p>Tareas diarias</p>
+								<span>Faltas, retrasos y comportamiento</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="imc-menu-amb imc-menu-amb-grup">
+				<p>Con la agrupación</p>
+				<ul>
+					<li class="imc-menu-tasques-diaries">
+						<a href="https://docent.edu.gva.es/md-front/www/" data-href="/tasques/diaries" class="imc-bt-tasques-diaries" data-tabula="si">
+							<div class="imc-icona">
+								<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+									<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+										<path d="M630 1204 c-42 -15 -63 -32 -97 -81 l-36 -53 -106 0 c-186 0 -181 14 -181 -477 0 -340 2 -382 18 -413 34 -68 45 -70 430 -70 368 0 392 3 426 51 14 21 16 71 16 437 l0 414 -29 29 c-29 29 -31 29 -139 29 l-110 0 -36 50 c-19 27 -46 56 -58 64 -27 17 -77 27 -98 20z m-190 -284 c0 -38 4 -52 19 -60 21 -11 360 -14 399 -4 19 6 22 13 22 61 l0 54 58 -3 57 -3 3 -255 2 -255 -117 -118 -117 -117 -223 0 -223 0 0 375 0 375 60 0 60 0 0 -50z"></path>
+										<path d="M440 705 l0 -35 220 0 220 0 0 35 0 35 -220 0 -220 0 0 -35z"></path>
+										<path d="M440 555 l0 -35 220 0 220 0 0 35 0 35 -220 0 -220 0 0 -35z"></path>
+										<path d="M440 410 l0 -30 145 0 145 0 0 30 0 30 -145 0 -145 0 0 -30z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="imc-dades">
+								<p>Tareas diarias</p>
+								<span>Faltas, retrasos y comportamiento</span>
+							</div>
+						</a>
+					</li>
+					<li class="imc-menu-agenda">
+						<a href="https://docent.edu.gva.es/md-front/www/" data-href="/agenda/escolar" class="imc-bt-agenda-escolar" data-tabula="si">
+							<div class="imc-icona">
+								<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+									<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+										<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+										<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+										<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+										<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+										<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="imc-dades">
+								<p>Agenda escolar</p>
+								<span>Envíe actividades, deberes o mensajes, sin posibilidad de respuesta</span>
+							</div>
+						</a>
+					</li>
+					<li class="imc-menu-comunicacions">
+						<a href="https://docent.edu.gva.es/md-front/www/" data-href="/comunicacions" class="imc-bt-comunicacions" data-tabula="si">
+							<div class="imc-icona">
+								<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+									<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+										<path d="M220 1194 c-45 -20 -77 -50 -101 -96 -17 -34 -19 -62 -19 -314 0 -317 4 -336 82 -390 41 -29 44 -29 201 -32 l160 -3 147 -120 c81 -65 150 -119 154 -119 3 0 6 54 6 119 l0 119 113 4 c103 3 117 5 154 30 24 16 49 44 62 70 20 42 21 59 21 321 0 170 -4 286 -11 304 -15 40 -57 82 -104 104 -37 17 -71 19 -435 18 -331 0 -401 -2 -430 -15z m846 -125 c18 -20 19 -39 19 -284 0 -243 -1 -264 -19 -284 -17 -19 -31 -21 -175 -23 l-156 -3 -5 -58 -5 -59 -75 61 -74 61 -160 0 c-134 0 -162 3 -178 17 -17 15 -18 37 -18 286 0 238 2 273 17 289 15 17 41 18 413 18 391 0 397 0 416 -21z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="imc-dades">
+								<p>Comunicaciones</p>
+								<span>Mensajes con el alumno o su representante legal.</span>
+							</div>
+						</a>
+					</li>
+					<li class="imc-menu-obsprogres" id="id-menu-obsprogres">
+						<a href="https://docent.edu.gva.es/md-front/www/" data-href="/observacions/progres" class="imc-bt-observacions-progres" data-tabula="si">
+							<div class="imc-icona">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 699" version="1.1"><path d="M 509 520.479 C 509 520.742, 510.228 524.455, 511.730 528.729 C 514.184 535.716, 514.460 537.861, 514.460 550 C 514.460 562.139, 514.184 564.284, 511.730 571.271 C 510.228 575.545, 509 579.258, 509 579.521 C 509 579.784, 534.763 580, 566.250 579.999 L 623.500 579.998 629.500 577.121 C 640.584 571.805, 646.980 561.881, 646.980 550 C 646.980 538.119, 640.584 528.195, 629.500 522.879 L 623.500 520.002 566.250 520.001 C 534.763 520, 509 520.216, 509 520.479" stroke="none" fill="none" fill-rule="evenodd"></path><path d="M 327.310 67.021 C 303.864 69.299, 276.213 74.185, 261.500 78.648 C 233.482 87.149, 214.040 95.240, 191.500 107.781 C 179.895 114.237, 163.316 125.112, 154 132.377 C 137.002 145.633, 60.712 208.557, 57.023 212.364 C 48.623 221.031, 44.020 232.518, 44.008 244.846 C 43.993 258.600, 48.893 269.777, 59.263 279.641 C 65.945 285.998, 141.777 348.286, 156.134 359.210 C 182.878 379.560, 213.645 395.691, 247 406.852 C 267.821 413.818, 276.462 415.838, 304 420.172 C 321.561 422.937, 325.886 423.251, 347.500 423.333 C 373.705 423.433, 391.235 421.637, 415.500 416.366 C 431.488 412.893, 458.800 404.949, 461.500 402.987 C 462.050 402.588, 464.300 401.692, 466.500 400.998 C 472.258 399.181, 495.495 388.007, 506.280 381.869 C 518.866 374.707, 530.573 367.041, 540.866 359.220 C 555.285 348.264, 636.115 281.803, 640.236 277.515 C 658.098 258.925, 657.170 228.876, 638.169 210.599 C 631.175 203.872, 552.049 139.109, 539 129.432 C 494.518 96.444, 443.971 76.361, 387 69.039 C 368.232 66.626, 340.883 65.702, 327.310 67.021 M 328.500 118.134 C 312.164 120.191, 286.353 130.918, 272.405 141.448 C 238.033 167.394, 218.359 208.153, 220.288 249.417 C 222.321 292.902, 243.728 330.352, 279.675 353.309 C 293.773 362.312, 310.964 368.839, 327.917 371.625 C 342.266 373.984, 366.271 373.045, 379.151 369.623 C 428.499 356.509, 462.634 321.257, 474.165 271.500 C 476.095 263.169, 476.479 258.747, 476.467 245 C 476.451 227.268, 474.660 216.181, 469.491 201.808 C 453.488 157.305, 413.369 124.308, 367.678 118.068 C 358.597 116.828, 338.606 116.862, 328.500 118.134 M 205 148.800 C 183.619 162.322, 183.776 162.201, 129.212 206.850 C 102.074 229.057, 86.718 242.274, 86.350 243.742 C 86.034 245, 86.389 246.906, 87.138 247.977 C 88.741 250.269, 170.374 317.159, 183.500 326.935 C 192.524 333.656, 207.190 343.144, 207.726 342.607 C 207.884 342.450, 205.494 338.143, 202.415 333.037 C 169.674 278.727, 169.674 211.273, 202.415 156.963 C 205.494 151.857, 207.897 147.575, 207.756 147.449 C 207.615 147.322, 206.375 147.930, 205 148.800 M 489 147.327 C 489 147.532, 491.516 151.873, 494.591 156.974 C 515.819 192.186, 523.654 233.878, 516.585 274 C 512.182 298.989, 504.202 318.732, 489.108 341.977 L 487.500 344.455 491.500 342.057 C 504.791 334.091, 522.388 320.703, 561 289.184 C 584.925 269.654, 605.962 252.310, 607.750 250.641 C 612.716 246.006, 612.194 243.218, 605.250 237.287 C 594.876 228.426, 524.686 171.550, 516.500 165.372 C 507.317 158.440, 489 146.421, 489 147.327 M 333.069 164.088 C 306.989 169.204, 284.161 187.624, 272.960 212.590 C 269.292 220.765, 266 236.094, 266 245 C 266 253.976, 269.300 269.254, 273.039 277.588 C 283.038 299.873, 300.317 315.469, 324 323.587 C 332.001 326.329, 333.440 326.500, 348.500 326.500 C 363.473 326.500, 365.032 326.318, 372.785 323.656 C 381.091 320.805, 389.890 316.549, 395.500 312.669 C 401.098 308.797, 412.212 297.525, 416.211 291.662 C 425.926 277.422, 431.642 257.943, 430.743 242.145 C 430.176 232.187, 428.294 223, 426.822 223 C 426.264 223, 424.604 223.858, 423.132 224.906 C 419.012 227.839, 409.374 230.246, 402.085 230.162 C 385.963 229.975, 373.406 221.654, 366.277 206.430 C 363.821 201.186, 363.500 199.343, 363.500 190.500 C 363.500 180.988, 363.678 180.146, 367.146 173.245 C 369.152 169.255, 370.502 165.810, 370.146 165.591 C 366.396 163.278, 342.199 162.297, 333.069 164.088 M 67 483.593 C 42.665 490.057, 23.798 509.077, 17.532 533.460 C 15.526 541.265, 15.526 558.735, 17.532 566.540 C 22.665 586.514, 36.061 602.939, 54.195 611.492 C 69.173 618.556, 43.919 618, 350.050 618 C 622.097 618, 626.808 617.967, 634.391 616.028 C 646.639 612.895, 655.258 607.841, 665.049 598.049 C 678.947 584.152, 685 569.574, 685 550 C 685 530.426, 678.947 515.848, 665.049 501.951 C 655.258 492.159, 646.639 487.105, 634.391 483.972 C 626.805 482.032, 622.207 482.001, 349.590 482.066 C 109.895 482.123, 71.758 482.329, 67 483.593 M 509 520.479 C 509 520.742, 510.228 524.455, 511.730 528.729 C 514.184 535.716, 514.460 537.861, 514.460 550 C 514.460 562.139, 514.184 564.284, 511.730 571.271 C 510.228 575.545, 509 579.258, 509 579.521 C 509 579.784, 534.763 580, 566.250 579.999 L 623.500 579.998 629.500 577.121 C 640.584 571.805, 646.980 561.881, 646.980 550 C 646.980 538.119, 640.584 528.195, 629.500 522.879 L 623.500 520.002 566.250 520.001 C 534.763 520, 509 520.216, 509 520.479" stroke="none" fill="none" fill-rule="evenodd"></path></svg>
+							</div>
+							<div class="imc-dades">
+								<p>Observaciones sobre el progreso del alumno/a</p>
+								<span>Informe personal por traslado - Anexo X - Apartado D</span>
+							</div>
+						</a>
+					</li>
+					<li class="imc-menu-obsexpedient" id="id-menu-obsexpedient">
+						<a href="https://docent.edu.gva.es/md-front/www/" data-href="/observacions/expedient" class="imc-bt-observacions-expedient" data-tabula="si">
+							<div class="imc-icona">
+								<svg viewBox="0 0 512 512" xml:space="preserve">
+									<g>
+										<path d="M256,96C144.341,96,47.559,161.021,0,256c47.559,94.979,144.341,160,256,160c111.656,0,208.439-65.021,256-160
+											C464.441,161.021,367.656,96,256,96z M382.225,180.852c30.082,19.187,55.572,44.887,74.719,75.148
+											c-19.146,30.261-44.639,55.961-74.719,75.148C344.428,355.257,300.779,368,256,368c-44.78,0-88.428-12.743-126.225-36.852
+											c-30.08-19.188-55.57-44.888-74.717-75.148c19.146-30.262,44.637-55.962,74.717-75.148c1.959-1.25,3.938-2.461,5.929-3.65
+											C130.725,190.866,128,205.613,128,221c0,70.691,57.308,128,128,128c70.691,0,128-57.309,128-128
+											c0-15.387-2.725-30.134-7.703-43.799C378.285,178.39,380.266,179.602,382.225,180.852z M256,205c0,26.51-21.49,48-48,48
+											s-48-21.49-48-48s21.49-48,48-48S256,178.49,256,205z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="imc-dades">
+								<p>Observaciones</p>
+								<span>Expediente Académico - Anexo XI - Apartado G</span>
+							</div>
+						</a>
+					</li>
+					<!--
+					<li class="imc-menu-qualificacions">
+						<a href="" data-href="/qualificacions" class="imc-bt-qualificacions">
+							<div class="imc-icona">
+								<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+									<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+										<path d="M511 1170 c-28 -28 -50 -41 -80 -46 -47 -8 -71 -33 -71 -78 0 -21 -11 -39 -41 -67 -39 -36 -41 -41 -34 -76 10 -48 10 -98 0 -145 -7 -34 -5 -39 34 -76 30 -28 41 -47 41 -68 0 -46 25 -74 67 -74 29 0 44 -8 80 -45 48 -49 56 -51 93 -30 33 19 72 19 114 -2 l35 -16 50 46 c40 37 57 47 84 47 40 0 54 14 63 61 9 47 22 68 56 97 25 22 29 30 23 56 -9 40 -9 112 0 154 7 30 3 36 -34 71 -30 28 -41 46 -41 67 0 40 -26 74 -56 74 -35 0 -63 16 -102 57 -24 26 -39 34 -55 30 -12 -3 -38 -10 -57 -15 -24 -6 -47 -4 -74 5 -52 18 -50 18 -95 -27z m234 -129 c47 -22 109 -84 124 -124 18 -47 13 -143 -9 -186 -48 -96 -157 -146 -261 -121 -68 17 -154 96 -164 154 -14 73 -1 152 32 198 63 87 186 122 278 79z"></path>
+										<path d="M629 918 c-22 -39 -28 -43 -67 -46 -23 -2 -42 -7 -42 -11 0 -4 14 -20 31 -37 28 -27 30 -32 24 -76 -4 -27 -4 -48 -1 -48 3 0 22 9 42 21 l38 21 37 -21 c20 -12 40 -21 43 -21 4 0 4 21 0 48 -5 43 -3 49 25 76 40 38 39 46 -3 46 -40 0 -66 8 -66 21 0 5 -8 22 -19 39 l-19 31 -23 -43z"></path>
+										<path d="M287 355 l-77 -156 63 7 63 6 33 -51 c18 -28 35 -51 37 -51 3 0 38 68 79 151 63 128 71 151 57 157 -9 3 -33 23 -53 44 -26 28 -44 38 -67 38 -17 0 -36 2 -44 5 -9 4 -38 -44 -91 -150z"></path>
+										<path d="M834 463 c-19 -20 -46 -42 -59 -48 l-26 -10 76 -129 c41 -71 75 -132 75 -136 0 -4 7 -13 15 -20 13 -11 18 -5 37 40 l22 53 63 -6 64 -6 -40 74 c-135 248 -119 225 -158 225 -28 0 -42 -8 -69 -37z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="imc-dades">
+								<p>Calificaciones</p>
+								<span>Valoración del trabajo del alumno.</span>
+							</div>
+						</a>
+					</li>
+					-->
+				</ul>
+			</div>
+
+		</div>
+		
+	</div>
+</section>
+
+<!-- calendari -->
+<section class="imc-modul imc-modul-calendari imc-modul-ca imc-mo-sd" id="imc-modul-calendari" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-calend-dialeg">
+	<div class="imc-modul-contenidor">
+		
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-calend-dialeg">Calendario escolar</h1>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+		</div>
+		
+	</div>
+</section>
+
+<!-- comunicacions desde tutor -->
+<section class="imc-modul imc-modul-com-desde-tutor imc-modul-co-de-tu" id="imc-modul-com-desde-tutor" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-com-tutor-dialeg">
+	<div class="imc-modul-contenidor">
+		
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-com-tutor-dialeg">Comunicaciones desde Web Família</h1>
+			<ul>
+				<li class="imc-activa">
+					<a href="javascript:;" class="imc-bt-text imc-bt-activa" data-tabula="si">Activa</a>
+				</li>
+				<li class="imc-desactiva">
+					<a href="javascript:;" class="imc-bt-text imc-bt-desactiva" data-tabula="si">Desactiva</a>
+				</li>
+			</ul>
+		</header>
+		
+		<div class="imc-mo-contingut">
+			
+			<p>El centro tiene la posibilidad de iniciar comunicaciones desde Web Familia.</p>
+
+			<p>Además, usted tienen la potestad de mantenerla activada o no.</p>
+
+			<p class="imc-mo-info">Actualmente está <strong></strong></p>
+
+			<p></p>
+
+		</div>
+		
+	</div>
+</section>
+
+
+<!-- observacions progres -->
+<section class="imc-modul imc-modul-observacions-progres imc-modul-obs-pro" id="imc-modul-observacions-progres" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-modul-obs-pro-titol">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-modul-obs-pro-titol">Observaciones sobre el progreso del alumno/a</h1>
+			<ul class="imc-mo-botonera">
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-esborra" data-tabula="si">Borra</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="imc-bt-text imc-bt-contesta" data-tabula="si">Guarda</a>
+				</li>				
+			</ul>
+			<p class="imc--alumne"></p>
+		</header>
+		
+		<div class="imc-mo-contingut">
+			
+			<div class="imc--form">
+				<label for="imc_f_observacions_progres">Informe personal por traslado - Anexo X - Apartado D</label>
+				<textarea id="imc_f_observacions_progres" name="imc_f_observacions_progres" cols="10" maxlength="4000" aria-required="true" data-tabula="si" style="height: 59px;"></textarea>
+			</div>
+		
+		</div>
+		
+	</div>
+</section>
+
+
+<!-- observacions expedient -->
+<section class="imc-modul imc-modul-observacions-expedient imc-modul-obs-exp" id="imc-modul-observacions-expedient" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="imc-modul-obs-exp-titol">
+	<div class="imc-modul-contenidor">
+						
+		<header>
+			<a href="javascript:;" class="imc-bt imc-bt-tanca" title="Cerrar" data-tabula="si" role="button">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</a>
+			<h1 id="imc-modul-obs-exp-titol">Observaciones</h1>
+			<ul class="imc-mo-botonera">
+				<li class="imc-cancela">
+					<a href="javascript:;" class="imc-bt-text imc-bt-esborra" data-tabula="si">Borra</a>
+				</li>
+				<li class="imc-finalitza">
+					<a href="javascript:;" class="imc-bt-text imc-bt-contesta" data-tabula="si">Guarda</a>
+				</li>
+			</ul>
+			<p class="imc--alumne"></p>
+		</header>
+		
+		<div class="imc-mo-contingut">
+		
+			<div class="imc--form">
+				<label for="imc_f_observacions_expedient">Expediente Académico - Anexo XI - Apartado G</label>
+				<textarea id="imc_f_observacions_expedient" name="imc_f_observacions_expedient" cols="10" maxlength="4000" aria-required="true" data-tabula="si" style="height: 59px;"></textarea>
+			</div>
+		
+		</div>
+		
+	</div>
+</section>
+</div>
+		
+		<!-- aplicacio -->
+		<div class="imc-aplicacio" id="imc-aplicacio"><nav class="imc-marc" id="imc-marc" data-app="interna">
+	<ul>
+		<!--
+		<li>
+			<div class="imc-marc-bt-docent imc-marc-bt-invisible" tabindex="0" 
+				id="imc-marc-bt-docent">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000"
+						preserveAspectRatio="xMidYMid meet">
+						<g
+							transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)"
+							fill="none" stroke="none">
+							<path
+							d="M623 1190 c-37 -15 -46 -78 -17 -111 13 -14 9 -26 -34 -100 l-48 -84 -102 -3 c-86 -2 -102 0 -102 13 0 25 -38 55 -69 55 -33 0 -71 -39 -71 -72 0 -32 46 -70 80 -66 28 3 33 -3 75 -76 25 -43 45 -83 45 -89 0 -6 -21 -48 -47 -93 -44 -77 -49 -82 -75 -77 -20 4 -33 -1 -52 -20 -31 -32 -33 -56 -5 -91 33 -42 100 -31 119 20 10 24 12 25 107 22 l96 -3 50 -83 c43 -74 47 -85 34 -100 -23 -27 -26 -46 -12 -80 25 -59 107 -52 128 12 7 22 5 33 -10 54 l-19 26 50 88 51 88 93 0 c79 0 94 -3 99 -17 20 -58 86 -72 122 -27 12 15 21 35 21 46 0 28 -45 68 -77 68 -25 0 -34 10 -73 81 -25 44 -44 86 -42 92 2 7 22 45 45 84 38 65 45 73 73 73 37 0 74 36 74 71 0 35 -35 69 -70 69 -32 0 -70 -30 -70 -55 0 -12 -17 -15 -97 -15 l-98 1 -49 86 c-48 84 -49 86 -32 114 20 34 13 73 -17 94 -24 17 -42 18 -74 5z m130 -373 c22 -12 50 -41 64 -65 35 -60 30 -152 -10 -206 -67 -87 -199 -100 -281 -28 -49 44 -70 149 -42 215 16 40 77 95 114 103 15 3 32 7 37 9 20 8 81 -7 118 -28z" ></path>
+							<path
+							d="M590 792 c-19 -10 -46 -34 -58 -53 -20 -28 -23 -43 -20 -92 4 -51 9 -63 40 -94 29 -29 45 -37 86 -41 87 -8 151 41 167 128 7 42 -26 113 -66 143 -39 28 -106 32 -149 9z" ></path>
+						</g>
+					</svg>
+				</div>
+				<span></span>
+			</div>
+		</li>-->
+		<li>
+			<a class="imc-marc-bt-docent imc-bt-personalitza" tabindex="0" href="javascript:;" id="imc-marc-bt-docent">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M623 1190 c-37 -15 -46 -78 -17 -111 13 -14 9 -26 -34 -100 l-48 -84 -102 -3 c-86 -2 -102 0 -102 13 0 25 -38 55 -69 55 -33 0 -71 -39 -71 -72 0 -32 46 -70 80 -66 28 3 33 -3 75 -76 25 -43 45 -83 45 -89 0 -6 -21 -48 -47 -93 -44 -77 -49 -82 -75 -77 -20 4 -33 -1 -52 -20 -31 -32 -33 -56 -5 -91 33 -42 100 -31 119 20 10 24 12 25 107 22 l96 -3 50 -83 c43 -74 47 -85 34 -100 -23 -27 -26 -46 -12 -80 25 -59 107 -52 128 12 7 22 5 33 -10 54 l-19 26 50 88 51 88 93 0 c79 0 94 -3 99 -17 20 -58 86 -72 122 -27 12 15 21 35 21 46 0 28 -45 68 -77 68 -25 0 -34 10 -73 81 -25 44 -44 86 -42 92 2 7 22 45 45 84 38 65 45 73 73 73 37 0 74 36 74 71 0 35 -35 69 -70 69 -32 0 -70 -30 -70 -55 0 -12 -17 -15 -97 -15 l-98 1 -49 86 c-48 84 -49 86 -32 114 20 34 13 73 -17 94 -24 17 -42 18 -74 5z m130 -373 c22 -12 50 -41 64 -65 35 -60 30 -152 -10 -206 -67 -87 -199 -100 -281 -28 -49 44 -70 149 -42 215 16 40 77 95 114 103 15 3 32 7 37 9 20 8 81 -7 118 -28z"></path>
+							<path d="M590 792 c-19 -10 -46 -34 -58 -53 -20 -28 -23 -43 -20 -92 4 -51 9 -63 40 -94 29 -29 45 -37 86 -41 87 -8 151 41 167 128 7 42 -26 113 -66 143 -39 28 -106 32 -149 9z"></path>
+						</g>
+					</svg>
+				</div>
+				<span>VICENTE JAVIER ESLAVA MUÑOZ</span>
+			</a>
+		</li>
+		<li><a href="https://docent.edu.gva.es/md-front/www/#centres" class="imc-marc-bt-inici" id="imc-marc-bt-inici">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M493 1085 c-309 -262 -428 -371 -431 -394 -9 -62 74 -82 131 -31 19 16 37 30 41 30 3 0 6 -111 6 -247 0 -216 2 -253 18 -283 27 -54 69 -70 190 -70 l102 0 0 185 c0 228 -2 225 120 225 122 0 120 3 120 -225 l0 -185 100 0 c111 0 150 11 190 55 l25 27 0 259 c0 142 2 259 5 259 3 -1 21 -14 40 -30 40 -35 88 -40 114 -11 33 36 16 60 -129 188 -338 295 -434 373 -465 373 -23 0 -61 -27 -177 -125z"></path>
+						</g>
+					</svg>
+				</div> <span>Centros</span>
+		</a></li>
+		<li><a href="https://docent.edu.gva.es/md-front/www/#sincronitza" class="imc-marc-bt-sincronitza" id="imc-marc-bt-sincronitza">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M225 875 c-66 -85 -121 -159 -123 -165 -2 -6 21 -10 57 -10 l61 0 0 -33 c0 -76 72 -261 107 -274 9 -4 121 75 196 137 4 4 -4 31 -18 61 -13 30 -25 66 -25 82 0 26 1 27 60 27 33 0 60 2 60 5 0 2 -33 46 -72 97 -40 52 -95 124 -123 160 -27 37 -52 67 -55 68 -3 0 -59 -70 -125 -155z"></path>
+							<path d="M899 857 l-96 -73 25 -47 c13 -26 25 -61 26 -79 l1 -33 -57 -3 c-32 -2 -58 -6 -58 -10 0 -13 239 -317 249 -317 8 0 251 310 251 320 0 3 -26 5 -58 5 l-58 0 -12 78 c-13 83 -76 225 -103 229 -7 2 -57 -30 -110 -70z"></path>
+						</g>
+					</svg>
+				</div> <span>Sincroniza</span>
+		</a></li>
+		<li><a href="https://docent.edu.gva.es/md-front/www/#informes/safata" class="imc-marc-bt-safata-informes" id="imc-marc-bt-safata-informes">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+							<path d="M626 1168 c-14 -19 -16 -63 -16 -281 l0 -258 -60 43 c-33 24 -84 60 -112 80 -61 44 -100 48 -122 16 -39 -55 -28 -67 203 -232 90 -64 144 -96 162 -96 18 0 76 36 180 111 85 61 164 120 177 132 26 24 28 54 6 85 -27 39 -61 28 -179 -57 l-110 -80 -5 263 c-6 294 -6 296 -71 296 -28 0 -42 -6 -53 -22z"></path>
+							<path d="M195 505 c-25 -24 -25 -27 -25 -188 0 -151 2 -166 21 -191 l20 -26 454 0 454 0 20 26 c19 25 21 40 21 191 0 161 0 164 -25 188 -31 31 -49 31 -80 0 -24 -23 -25 -30 -25 -145 l0 -120 -365 0 -365 0 0 120 c0 115 -1 122 -25 145 -13 14 -31 25 -40 25 -9 0 -27 -11 -40 -25z"></path>
+						</g>
+					</svg>
+				</div> <span>Bandeja informes</span>
+		</a></li>
+		<li><a href="https://docent.edu.gva.es/md-front/www/#ajuda" class="imc-marc-bt-ajuda" id="imc-marc-bt-ajuda">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+							<path d="M695 1226 c-106 -46 -114 -179 -15 -235 94 -53 210 7 210 109 0 59 -24 98 -73 121 -49 22 -81 23 -122 5z"></path>
+							<path d="M481 825 c-72 -27 -76 -30 -85 -69 -6 -25 -5 -28 11 -21 10 4 39 10 64 12 39 4 50 2 69 -17 29 -29 25 -68 -30 -263 -71 -255 -52 -329 94 -359 92 -20 253 31 267 84 l7 27 -62 -6 c-87 -8 -106 4 -106 66 0 26 19 112 42 192 66 229 58 315 -33 361 -50 26 -158 23 -238 -7z"></path>
+						</g>
+					</svg>
+				</div> <span>Ayuda</span>
+		</a></li>
+		<li><a href="https://docent.edu.gva.es/md-front/www/#personalitza" class="imc-marc-bt-personalitza" id="imc-marc-bt-personalitza">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M579 1150 c-11 -7 -19 -31 -24 -74 l-6 -65 -45 -17 -44 -17 -45 42 c-24 22 -51 41 -60 41 -21 0 -125 -102 -125 -123 0 -10 19 -38 41 -62 l42 -45 -17 -44 -17 -44 -59 -4 c-82 -6 -90 -15 -90 -104 0 -88 15 -104 96 -104 l51 0 18 -45 17 -46 -41 -44 c-23 -25 -41 -52 -41 -61 0 -22 102 -124 124 -124 9 0 36 18 61 41 l44 41 45 -17 45 -17 7 -64 c8 -77 16 -84 108 -84 82 0 96 12 96 86 l0 54 44 22 44 21 52 -41 c29 -23 57 -42 62 -42 20 0 118 103 118 125 0 12 -17 42 -38 66 l-39 44 19 43 19 42 54 0 c77 0 95 20 95 103 0 85 -11 98 -89 106 -61 6 -63 7 -80 46 l-18 40 38 42 c53 58 51 79 -15 142 -30 28 -59 51 -64 51 -6 0 -32 -18 -58 -40 -27 -22 -52 -40 -55 -40 -20 0 -77 32 -83 45 -3 9 -6 36 -6 59 0 61 -20 76 -101 76 -35 0 -71 -5 -80 -10z m188 -309 c78 -39 123 -115 123 -206 0 -64 -15 -106 -55 -153 -136 -162 -409 -60 -409 153 0 174 185 286 341 206z"></path>
+						</g>
+					</svg>
+				</div> <span>Personaliza</span>
+		</a></li>
+		<li>
+			<a href="javascript:;" class="imc-marc-bt-desconecta" id="imc-marc-bt-desconecta" role="button">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M612 1137 c-21 -23 -22 -31 -22 -254 l0 -232 26 -20 c35 -27 59 -26 89 4 l25 24 0 226 0 226 -25 24 c-30 31 -65 32 -93 2z"></path>
+							<path d="M410 1011 c-90 -48 -184 -177 -215 -296 -89 -343 237 -669 580 -580 256 67 415 329 350 580 -31 117 -111 230 -205 290 -52 33 -95 31 -123 -7 -29 -39 -17 -70 48 -116 126 -89 180 -230 141 -366 -37 -128 -121 -210 -247 -242 -177 -45 -357 64 -404 243 -20 76 -19 108 6 188 17 56 30 77 78 124 31 31 69 66 84 78 34 27 36 73 5 103 -27 25 -52 25 -98 1z"></path>
+						</g>
+					</svg>
+				</div> <span>Desconecta</span>
+			</a>
+		</li>
+		<li><a href="javascript:;" class="imc-marc-bt-enrere" id="imc-marc-bt-enrere">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M632 1103 c-21 -18 -291 -384 -312 -423 -6 -11 -9 -29 -6 -38 3 -10 75 -112 159 -227 171 -234 191 -251 233 -202 13 16 24 34 24 41 0 7 -52 83 -115 169 -63 87 -115 160 -115 162 0 3 99 5 220 5 207 0 221 1 240 20 24 24 25 49 6 76 -13 18 -31 19 -245 24 l-231 5 120 164 c66 91 120 170 120 176 0 21 -41 65 -60 65 -10 0 -27 -8 -38 -17z"></path>
+						</g>
+					</svg>
+				</div> <span>Atrás</span>
+		</a></li>
+	</ul>
+</nav>
+
+<div class="imc-marc-centreGrup" id="imc-marc-centreGrup" data-app="interna">
+	<ul>
+		<li class="imc-torna"><a href="https://docent.edu.gva.es/md-front/www/"></a></li>
+		<li class="imc-centre-nom"><span></span></li>
+		<li class="imc-grup-nom"><a href="javascript:;">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M103 1100 c-75 -46 -63 -191 19 -219 21 -7 204 -11 545 -11 570 0 566 0 596 63 21 43 21 77 3 122 -28 66 -17 65 -603 65 -506 0 -529 -1 -560 -20z"></path>
+							<path d="M89 751 c-26 -26 -29 -36 -29 -91 0 -55 3 -65 29 -91 l29 -29 545 0 c534 0 545 0 570 21 58 45 58 153 0 198 -25 21 -36 21 -570 21 l-545 0 -29 -29z"></path>
+							<path d="M115 436 c-16 -8 -35 -22 -41 -33 -37 -62 -22 -152 29 -183 31 -19 54 -20 560 -20 586 0 575 -1 603 65 29 70 5 147 -52 171 -48 20 -1054 20 -1099 0z"></path>
+						</g>
+					</svg>
+				</div> <span></span>
+		</a></li>
+	</ul>
+</div>
+
+<!-- centres  -->
+<section class="imc-seccio imc-seccio-centres imc-se-ce imc-seccio-marc imc-app-es-centrat imc-app-es-total imc-seccio-activa" id="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-centres-labelledby" data-load="true">
+	<div class="imc-seccio-contenidor">
+
+		<div class="imc-se-contingut">
+
+			<header>
+				<h1 id="imc-seccio-centres-labelledby">Centros</h1>
+			</header>
+
+			<ul class="imc-centres" style="display: block;"><li data-id="46018761" data-phone="962787530" data-email="46018761@edu.gva.es 46018761@edu.gva.es" data-adress="Carretera CV-378 - KM. 0,300&lt;br/&gt;46380 CHESTE" data-comcentre="1" data-comtutor="1" data-pilotatge="1">
+	<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/informacio" class="imc-bt-centre-info">
+		<div class="imc-centre-img">
+			
+		</div>
+		<p>CIPFP COMPLEJO EDUCATIVO DE CHESTE</p>
+	</a>
+	<ul class="imc-ce-opcions">
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/horari" class="imc-centre-horari imc-seleccionat">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M496 1225 c-225 -62 -394 -250 -433 -485 -14 -81 -14 -99 0 -182 57 -335 373 -559 698 -493 394 79 597 493 419 853 -73 148 -217 264 -380 307 -68 18 -237 18 -304 0z m257 -140 c167 -43 289 -164 333 -329 62 -231 -89 -481 -326 -542 -254 -65 -507 104 -553 369 -52 305 247 580 546 502z"></path>
+						<path d="M496 904 c-24 -23 -20 -42 27 -124 38 -67 43 -82 42 -138 l-1 -62 -82 -83 c-83 -84 -94 -103 -66 -114 11 -4 43 21 105 83 87 86 89 88 133 85 38 -2 48 2 76 29 l32 31 121 -2 c111 -2 121 -1 128 17 13 37 -7 44 -133 44 l-119 0 -33 35 c-19 19 -42 35 -52 35 -13 0 -31 22 -59 72 -60 108 -85 127 -119 92z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Horario de sesiones</strong>
+					<span>Faltas, agenda y comunicaciones por agrupación</span>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/qualifica/grup" class="imc-centre-qualificacions">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+					<path d="M511 1170 c-28 -28 -50 -41 -80 -46 -47 -8 -71 -33 -71 -78 0 -21 -11 -39 -41 -67 -39 -36 -41 -41 -34 -76 10 -48 10 -98 0 -145 -7 -34 -5 -39 34 -76 30 -28 41 -47 41 -68 0 -46 25 -74 67 -74 29 0 44 -8 80 -45 48 -49 56 -51 93 -30 33 19 72 19 114 -2 l35 -16 50 46 c40 37 57 47 84 47 40 0 54 14 63 61 9 47 22 68 56 97 25 22 29 30 23 56 -9 40 -9 112 0 154 7 30 3 36 -34 71 -30 28 -41 46 -41 67 0 40 -26 74 -56 74 -35 0 -63 16 -102 57 -24 26 -39 34 -55 30 -12 -3 -38 -10 -57 -15 -24 -6 -47 -4 -74 5 -52 18 -50 18 -95 -27z m234 -129 c47 -22 109 -84 124 -124 18 -47 13 -143 -9 -186 -48 -96 -157 -146 -261 -121 -68 17 -154 96 -164 154 -14 73 -1 152 32 198 63 87 186 122 278 79z"></path>
+					<path d="M629 918 c-22 -39 -28 -43 -67 -46 -23 -2 -42 -7 -42 -11 0 -4 14 -20 31 -37 28 -27 30 -32 24 -76 -4 -27 -4 -48 -1 -48 3 0 22 9 42 21 l38 21 37 -21 c20 -12 40 -21 43 -21 4 0 4 21 0 48 -5 43 -3 49 25 76 40 38 39 46 -3 46 -40 0 -66 8 -66 21 0 5 -8 22 -19 39 l-19 31 -23 -43z"></path>
+					<path d="M287 355 l-77 -156 63 7 63 6 33 -51 c18 -28 35 -51 37 -51 3 0 38 68 79 151 63 128 71 151 57 157 -9 3 -33 23 -53 44 -26 28 -44 38 -67 38 -17 0 -36 2 -44 5 -9 4 -38 -44 -91 -150z"></path>
+					<path d="M834 463 c-19 -20 -46 -42 -59 -48 l-26 -10 76 -129 c41 -71 75 -132 75 -136 0 -4 7 -13 15 -20 13 -11 18 -5 37 40 l22 53 63 -6 64 -6 -40 74 c-135 248 -119 225 -158 225 -28 0 -42 -8 -69 -37z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Calificaciones</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/dietari" class="imc-centre-dietari">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M988 1064 c-67 -58 -229 -138 -333 -165 -64 -17 -121 -22 -293 -26 l-212 -6 -25 -29 c-23 -27 -25 -38 -25 -125 0 -91 1 -96 29 -124 27 -27 35 -29 103 -29 l73 0 0 -92 c0 -68 7 -113 23 -166 21 -67 27 -75 60 -89 50 -21 125 -13 157 17 l24 23 -26 31 c-38 45 -54 90 -54 152 -1 62 18 100 55 110 70 17 312 -80 436 -175 36 -28 71 -50 78 -51 8 0 27 13 43 29 29 29 29 30 29 149 l0 120 35 35 c23 23 35 44 35 62 0 18 -12 39 -35 62 l-35 35 0 120 c0 119 0 120 -29 149 -16 16 -36 29 -44 29 -9 0 -39 -21 -69 -46z m52 -349 l0 -274 -77 49 c-84 54 -197 102 -308 130 l-70 18 0 77 0 77 94 24 c100 25 226 82 306 138 28 19 51 35 53 35 1 1 2 -123 2 -274z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Dietario</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/comunicacions" class="imc-centre-comunicacions">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M220 1194 c-45 -20 -77 -50 -101 -96 -17 -34 -19 -62 -19 -314 0 -317 4 -336 82 -390 41 -29 44 -29 201 -32 l160 -3 147 -120 c81 -65 150 -119 154 -119 3 0 6 54 6 119 l0 119 113 4 c103 3 117 5 154 30 24 16 49 44 62 70 20 42 21 59 21 321 0 170 -4 286 -11 304 -15 40 -57 82 -104 104 -37 17 -71 19 -435 18 -331 0 -401 -2 -430 -15z m846 -125 c18 -20 19 -39 19 -284 0 -243 -1 -264 -19 -284 -17 -19 -31 -21 -175 -23 l-156 -3 -5 -58 -5 -59 -75 61 -74 61 -160 0 c-134 0 -162 3 -178 17 -17 15 -18 37 -18 286 0 238 2 273 17 289 15 17 41 18 413 18 391 0 397 0 416 -21z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Mensajes pendientes</strong>
+				</p>
+			</a>
+			<div class="imc-com-json"></div>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/grups" class="imc-centre-grups">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M449 1190 c-143 -24 -207 -141 -168 -309 7 -31 6 -52 -3 -77 -10 -28 -9 -39 5 -69 9 -19 21 -35 27 -35 5 0 10 -6 10 -14 0 -7 13 -40 30 -72 20 -41 30 -74 30 -106 0 -67 -32 -100 -140 -142 l-85 -34 -3 -116 -3 -116 446 0 447 0 -6 27 c-3 16 -8 47 -11 70 -4 22 -14 48 -23 56 -16 14 -102 56 -271 133 -75 34 -89 52 -94 119 -3 38 2 60 19 90 12 22 25 51 29 65 4 14 18 38 31 53 24 29 32 84 15 103 -6 5 -3 38 7 82 13 61 14 84 4 129 -13 63 -32 89 -82 112 -19 9 -46 24 -60 32 -32 21 -92 28 -151 19z"></path>
+						<path d="M758 1190 c-25 -5 -54 -12 -64 -18 -14 -8 -12 -11 18 -21 37 -12 67 -40 88 -80 16 -31 16 -142 0 -200 -8 -32 -8 -46 1 -57 16 -19 5 -81 -19 -108 -11 -12 -22 -33 -25 -47 -4 -14 -18 -42 -32 -63 -19 -27 -25 -50 -25 -88 0 -66 21 -85 165 -147 137 -59 132 -57 180 -84 42 -23 42 -25 60 -139 5 -32 10 -38 30 -38 l25 0 0 119 0 119 -37 13 c-64 20 -152 68 -162 88 -21 39 -19 114 5 156 12 22 25 51 29 65 4 14 18 38 31 53 24 29 32 84 15 103 -6 5 -3 38 7 82 13 61 14 84 4 129 -13 63 -32 89 -82 112 -19 9 -46 24 -60 32 -32 21 -92 28 -152 19z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Grupos</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/informes" class="imc-centre-informes">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M308 1172 c-57 -35 -58 -40 -58 -517 0 -481 1 -490 61 -520 43 -23 697 -22 740 1 55 28 59 53 59 376 l-1 293 -181 193 -181 192 -206 0 c-176 0 -210 -3 -233 -18z m392 -179 c0 -182 31 -213 213 -213 l107 0 -2 -282 -3 -283 -335 0 -335 0 -3 430 c-1 237 0 436 3 443 3 9 49 12 180 12 l175 0 0 -107z"></path>
+						<path d="M580 520 l0 -30 155 0 155 0 0 30 0 30 -155 0 -155 0 0 -30z"></path>
+						<path d="M420 350 l0 -30 235 0 235 0 0 30 0 30 -235 0 -235 0 0 -30z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Informes</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#centre/46018761/equips" class="imc-centre-equips">
+				<svg x="0px" y="0px" viewBox="0 0 750 600" width="700" height="600">			
+					   <path d="m 120.17587,26.486452 c -19.10435,0 -35.20117,18.897979 -35.20117,41.326856 V 439.27121 c 0,22.42888 16.09682,41.32686 35.20117,41.32686 h 206.63281 l -22.5332,79.4802 c 0,10.21396 7.09884,18.55042 15.79883,18.55042 h 194.10156 c 8.69999,0 15.69883,-8.33646 15.79883,-18.55042 l -20.45703,-79.4802 h 201.35742 c 19.34885,0 34.94398,-18.6873 35.19727,-40.98978 l 0.002,-0.16739 V 67.813308 c 0,-22.428877 -16.09487,-41.326856 -35.19922,-41.326856 z m 7.79883,50.482834 H 703.07431 V 430.11524 H 127.9747 Z"></path>
+					   <path d="m 411.37509,193.19766 c 3.1,-7.27892 5.8,-8.68774 14.7,-7.51372 0,1.05662 0,2.23064 0,3.40466 0,39.79925 0,79.71591 0,119.51517 0,6.57451 1.2,12.56201 4.8,17.72769 4.2,5.9875 9.6,9.03995 16.2,9.62696 7.8,0.70442 15.8,1.17402 23.5,2.70025 13.4,2.70024 25.9,8.45294 36.7,18.4321 1.3,1.17402 2.6,2.58285 4.2,4.22647 -5,-1.05661 -9.5,-2.11323 -14.1,-2.81764 -13.4,-2.11324 -26.8,-2.70025 -40.2,-0.93922 -11.6,1.52623 -23.1,3.87426 -34.6,5.9875 -5.5,1.05662 -8.5,-0.82181 -11.2,-7.51372 0,-54.2397 0,-108.4794 0,-162.8365 z"></path>
+					   <path d="m 523.47509,353.33391 c -1.9,-1.99583 -3.4,-3.75686 -5,-5.40049 -13.8,-14.08823 -30.1,-21.83676 -48.1,-25.00661 -7.2,-1.29142 -14.6,-1.76103 -21.9,-2.34804 -6,-0.46961 -9.3,-4.22647 -9.3,-11.50539 0,-49.07401 0,-98.03062 0,-147.10463 0,-7.51373 3.7,-11.38799 10.1,-11.15319 12,0.35221 23.7,2.11324 35.1,6.80932 15.4,6.2223 28.1,16.43627 37,32.75514 1.2,2.11323 2.1,5.04828 2.1,7.63112 0.1,51.06985 0.1,102.25709 0.1,153.32694 0,0.46961 0,1.05662 -0.1,1.99583 z"></path>
+					   <path d="m 536.77509,352.9817 c 0,-1.29142 0,-2.34803 0,-3.52205 0,-48.95661 0.1,-97.91322 -0.1,-146.75243 0,-7.27892 2.1,-12.91421 5.8,-18.1973 11.7,-16.90588 27.2,-26.29803 45.1,-30.4071 8,-1.87843 16.2,-2.34804 24.4,-3.16985 5.6,-0.46961 9.3,4.10906 9.3,11.03578 0,27.35465 0,54.5919 0,81.94655 0,21.48456 0,42.96911 0,64.57107 0,8.10073 -3.2,11.975 -10.2,12.0924 -14.9,0.35221 -29.4,2.93505 -43.3,9.27475 -10.9,4.93088 -20.6,11.975 -29,21.48456 -0.4,0.46961 -0.8,0.93921 -1.2,1.29142 -0.2,0.2348 -0.4,0.2348 -0.8,0.3522 z"></path>
+					   <path d="m 548.57509,361.08244 c 4.5,-3.63946 8.4,-7.39632 12.7,-10.33137 14.1,-9.62696 29.5,-13.50123 45.6,-14.44044 3.7,-0.2348 7.5,-0.1174 11.1,-1.17402 10.4,-3.16985 16.3,-12.91421 16.4,-26.29803 0,-39.91666 0,-79.71592 0,-119.63258 0,-1.17402 0,-2.34804 0,-3.63946 2.8,0 5.2,-0.23481 7.7,0.1174 3.6,0.46961 6.5,4.22647 7,8.68774 0.1,0.70442 0.1,1.40883 0.1,2.23064 0,52.12646 0,104.25292 0,156.37938 0,6.45711 -3.4,11.03579 -8.3,11.03579 -1.8,0 -3.7,-0.58701 -5.5,-0.93922 -20.4,-5.16568 -41,-7.39632 -61.7,-5.63529 -8.3,0.58701 -16.3,2.34804 -25.1,3.63946 z"></path>
+					   <path d="m 183.57509,396.53782 c -5.3,-2.11323 -7.2,-6.5745 -7.1,-13.03161 0.3,-14.44044 0,-28.88088 0.5,-43.20391 0.7,-17.02329 5.6,-32.52034 13.9,-46.37377 10.3,-17.25809 24,-29.35049 41,-36.0424 8.3,-3.28725 17,-4.69607 25.7,-4.69607 16.1,0 32.1,-0.23481 48.2,0.3522 18,0.70441 33.8,8.68775 47.5,22.30637 11.4,11.38799 19.4,25.47622 24.2,42.2647 2.8,9.97916 4,20.31053 4.1,30.75931 0.1,11.50539 -0.1,23.12818 0.1,34.63357 0.1,6.45711 -1.8,10.91838 -7.1,13.03161 -63.8,0 -127.4,0 -191,0 z"></path>
+					   <path d="m 222.37509,178.75723 c 0.4,-36.98162 25.8,-66.5669 56.9,-66.2147 31.6,0.35221 56.5,30.0549 56.3,66.80171 -0.2,36.8642 -25.9,66.44949 -56.7,66.09729 -31.8,-0.35221 -56.4,-29.9375 -56.5,-66.6843 z"></path>				
+				</svg>
+				<p>
+					<strong>Aulas virtuales</strong>
+				</p>
+			</a>
+		</li>
+	</ul>
+	<!--
+	<p>Grupos en el centro:</p>
+	<ul class="imc-grups"></ul>
+	-->
+</li></ul>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- centre  -->
+<section class="imc-seccio imc-seccio-centre imc-seccio-vist-no imc-seccio-marc imc-app-es-total" id="imc-seccio-centre" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-centre-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1>Centro</h1>
+		</header>
+
+		<div class="imc-se-contingut">
+
+			<div class="imc-foto">
+				<div class="imc-img"></div>
+				<p class="imc-centre-nom" id="imc-seccio-centre-labelledby"></p>
+			</div>
+
+			<ul class="imc-centre-dades">
+				<li class="imc-telefon">
+
+					<div class="imc-icona">
+						<svg viewBox="0 0 124.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M850 1237 c-371 -131 -682 -439 -814 -805 -32 -89 -33 -139 -5 -195 33 -65 119 -142 181 -163 62 -21 166 -23 179 -2 5 7 8 92 6 188 l-2 174 -42 11 c-84 20 -88 14 182 285 143 143 256 249 265 248 8 -2 25 -33 39 -71 18 -51 28 -67 43 -67 23 0 294 66 326 80 31 14 29 60 -7 137 -36 76 -104 146 -174 179 -64 30 -94 30 -177 1z"></path>
+							</g>
+						</svg>
+					</div>
+					<ul></ul>
+
+				</li>
+				<li class="imc-correu">
+
+					<div class="imc-icona">
+						<svg viewBox="0 0 130.000000 109.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M149 943 c-11 -13 -15 -90 -17 -381 -2 -316 -1 -368 13 -388 l15 -24 499 0 c452 0 500 2 512 17 21 24 21 752 0 776 -12 15 -60 17 -511 17 -450 0 -499 -2 -511 -17z m831 -111 c0 -4 -72 -79 -160 -167 l-160 -160 -160 160 c-88 88 -160 163 -160 167 0 5 144 8 320 8 176 0 320 -3 320 -8z m110 -312 l0 -250 -430 0 -430 0 0 245 c0 135 3 245 7 245 3 0 95 -88 204 -195 127 -125 205 -195 218 -195 13 0 93 71 223 200 112 109 204 199 206 200 1 0 2 -112 2 -250z"></path>
+							</g>
+						</svg>
+					</div>
+					<ul></ul>
+
+				</li>
+				<li class="imc-adresa">
+
+					<div class="imc-icona">
+						<svg viewBox="0 0 112.000000 112.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,112.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M441 1094 c-311 -84 -438 -470 -237 -725 46 -58 149 -134 198 -144 22 -5 39 -25 79 -93 29 -48 58 -95 64 -105 11 -16 19 -6 71 82 54 92 63 102 103 116 64 22 135 70 186 127 226 252 102 656 -230 744 -64 18 -165 17 -234 -2z m192 -288 c65 -28 114 -111 102 -175 -15 -86 -82 -141 -172 -141 -139 0 -212 162 -120 267 53 60 122 78 190 49z"></path>
+							</g>
+						</svg>
+					</div> <span></span>
+
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+
+<!-- menu -->
+<section class="imc-seccio imc-seccio-menu imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-total" id="imc-seccio-menu" data-app="interna" aria-labelledby="imc-seccio-menu-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-menu-labelledby">Menú</h1>
+		</header>
+
+		<ul>
+			<li><a href="https://docent.edu.gva.es/md-front/www/" data-href="/tasques/diaries" class="imc-bt-tasques-diaries">
+					<div class="imc-icona">
+						<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M630 1204 c-42 -15 -63 -32 -97 -81 l-36 -53 -106 0 c-186 0 -181 14 -181 -477 0 -340 2 -382 18 -413 34 -68 45 -70 430 -70 368 0 392 3 426 51 14 21 16 71 16 437 l0 414 -29 29 c-29 29 -31 29 -139 29 l-110 0 -36 50 c-19 27 -46 56 -58 64 -27 17 -77 27 -98 20z m-190 -284 c0 -38 4 -52 19 -60 21 -11 360 -14 399 -4 19 6 22 13 22 61 l0 54 58 -3 57 -3 3 -255 2 -255 -117 -118 -117 -117 -223 0 -223 0 0 375 0 375 60 0 60 0 0 -50z"></path>
+								<path d="M440 705 l0 -35 220 0 220 0 0 35 0 35 -220 0 -220 0 0 -35z"></path>
+								<path d="M440 555 l0 -35 220 0 220 0 0 35 0 35 -220 0 -220 0 0 -35z"></path>
+								<path d="M440 410 l0 -30 145 0 145 0 0 30 0 30 -145 0 -145 0 0 -30z"></path>
+							</g>
+						</svg>
+					</div>
+					<div class="imc-dades">
+						<p>Tareas diarias</p>
+						<span>Faltas, retrasos y comportamiento</span>
+					</div>
+			</a></li>
+			<li><a href="https://docent.edu.gva.es/md-front/www/" data-href="/agenda/escolar" class="imc-bt-agenda-escolar">
+					<div class="imc-icona">
+						<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+								<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+								<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+								<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+								<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+							</g>
+						</svg>
+					</div>
+					<div class="imc-dades">
+						<p>Agenda escolar</p>
+						<span>Envíe actividades, deberes o mensajes, sin posibilidad de respuesta</span>
+					</div>
+			</a></li>
+			<li><a href="https://docent.edu.gva.es/md-front/www/" data-href="/comunicacions" class="imc-bt-comunicacions">
+					<div class="imc-icona">
+						<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M220 1194 c-45 -20 -77 -50 -101 -96 -17 -34 -19 -62 -19 -314 0 -317 4 -336 82 -390 41 -29 44 -29 201 -32 l160 -3 147 -120 c81 -65 150 -119 154 -119 3 0 6 54 6 119 l0 119 113 4 c103 3 117 5 154 30 24 16 49 44 62 70 20 42 21 59 21 321 0 170 -4 286 -11 304 -15 40 -57 82 -104 104 -37 17 -71 19 -435 18 -331 0 -401 -2 -430 -15z m846 -125 c18 -20 19 -39 19 -284 0 -243 -1 -264 -19 -284 -17 -19 -31 -21 -175 -23 l-156 -3 -5 -58 -5 -59 -75 61 -74 61 -160 0 c-134 0 -162 3 -178 17 -17 15 -18 37 -18 286 0 238 2 273 17 289 15 17 41 18 413 18 391 0 397 0 416 -21z"></path>
+							</g>
+						</svg>
+					</div>
+					<div class="imc-dades">
+						<p>Comunicaciones</p>
+						<!--<div class="imc-bt-alerta" title="3 comunicacions pendent d'obrir">3</div>-->
+						<span>Mensajes con el alumno o su representante legal</span>
+					</div>
+			</a></li>
+			<li><a href="https://docent.edu.gva.es/md-front/www/" data-href="/observacions/progres" class="imc-bt-observacions-progres">
+					<div class="imc-icona">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 699" version="1.1"><path d="M 509 520.479 C 509 520.742, 510.228 524.455, 511.730 528.729 C 514.184 535.716, 514.460 537.861, 514.460 550 C 514.460 562.139, 514.184 564.284, 511.730 571.271 C 510.228 575.545, 509 579.258, 509 579.521 C 509 579.784, 534.763 580, 566.250 579.999 L 623.500 579.998 629.500 577.121 C 640.584 571.805, 646.980 561.881, 646.980 550 C 646.980 538.119, 640.584 528.195, 629.500 522.879 L 623.500 520.002 566.250 520.001 C 534.763 520, 509 520.216, 509 520.479" stroke="none" fill="none" fill-rule="evenodd"></path><path d="M 327.310 67.021 C 303.864 69.299, 276.213 74.185, 261.500 78.648 C 233.482 87.149, 214.040 95.240, 191.500 107.781 C 179.895 114.237, 163.316 125.112, 154 132.377 C 137.002 145.633, 60.712 208.557, 57.023 212.364 C 48.623 221.031, 44.020 232.518, 44.008 244.846 C 43.993 258.600, 48.893 269.777, 59.263 279.641 C 65.945 285.998, 141.777 348.286, 156.134 359.210 C 182.878 379.560, 213.645 395.691, 247 406.852 C 267.821 413.818, 276.462 415.838, 304 420.172 C 321.561 422.937, 325.886 423.251, 347.500 423.333 C 373.705 423.433, 391.235 421.637, 415.500 416.366 C 431.488 412.893, 458.800 404.949, 461.500 402.987 C 462.050 402.588, 464.300 401.692, 466.500 400.998 C 472.258 399.181, 495.495 388.007, 506.280 381.869 C 518.866 374.707, 530.573 367.041, 540.866 359.220 C 555.285 348.264, 636.115 281.803, 640.236 277.515 C 658.098 258.925, 657.170 228.876, 638.169 210.599 C 631.175 203.872, 552.049 139.109, 539 129.432 C 494.518 96.444, 443.971 76.361, 387 69.039 C 368.232 66.626, 340.883 65.702, 327.310 67.021 M 328.500 118.134 C 312.164 120.191, 286.353 130.918, 272.405 141.448 C 238.033 167.394, 218.359 208.153, 220.288 249.417 C 222.321 292.902, 243.728 330.352, 279.675 353.309 C 293.773 362.312, 310.964 368.839, 327.917 371.625 C 342.266 373.984, 366.271 373.045, 379.151 369.623 C 428.499 356.509, 462.634 321.257, 474.165 271.500 C 476.095 263.169, 476.479 258.747, 476.467 245 C 476.451 227.268, 474.660 216.181, 469.491 201.808 C 453.488 157.305, 413.369 124.308, 367.678 118.068 C 358.597 116.828, 338.606 116.862, 328.500 118.134 M 205 148.800 C 183.619 162.322, 183.776 162.201, 129.212 206.850 C 102.074 229.057, 86.718 242.274, 86.350 243.742 C 86.034 245, 86.389 246.906, 87.138 247.977 C 88.741 250.269, 170.374 317.159, 183.500 326.935 C 192.524 333.656, 207.190 343.144, 207.726 342.607 C 207.884 342.450, 205.494 338.143, 202.415 333.037 C 169.674 278.727, 169.674 211.273, 202.415 156.963 C 205.494 151.857, 207.897 147.575, 207.756 147.449 C 207.615 147.322, 206.375 147.930, 205 148.800 M 489 147.327 C 489 147.532, 491.516 151.873, 494.591 156.974 C 515.819 192.186, 523.654 233.878, 516.585 274 C 512.182 298.989, 504.202 318.732, 489.108 341.977 L 487.500 344.455 491.500 342.057 C 504.791 334.091, 522.388 320.703, 561 289.184 C 584.925 269.654, 605.962 252.310, 607.750 250.641 C 612.716 246.006, 612.194 243.218, 605.250 237.287 C 594.876 228.426, 524.686 171.550, 516.500 165.372 C 507.317 158.440, 489 146.421, 489 147.327 M 333.069 164.088 C 306.989 169.204, 284.161 187.624, 272.960 212.590 C 269.292 220.765, 266 236.094, 266 245 C 266 253.976, 269.300 269.254, 273.039 277.588 C 283.038 299.873, 300.317 315.469, 324 323.587 C 332.001 326.329, 333.440 326.500, 348.500 326.500 C 363.473 326.500, 365.032 326.318, 372.785 323.656 C 381.091 320.805, 389.890 316.549, 395.500 312.669 C 401.098 308.797, 412.212 297.525, 416.211 291.662 C 425.926 277.422, 431.642 257.943, 430.743 242.145 C 430.176 232.187, 428.294 223, 426.822 223 C 426.264 223, 424.604 223.858, 423.132 224.906 C 419.012 227.839, 409.374 230.246, 402.085 230.162 C 385.963 229.975, 373.406 221.654, 366.277 206.430 C 363.821 201.186, 363.500 199.343, 363.500 190.500 C 363.500 180.988, 363.678 180.146, 367.146 173.245 C 369.152 169.255, 370.502 165.810, 370.146 165.591 C 366.396 163.278, 342.199 162.297, 333.069 164.088 M 67 483.593 C 42.665 490.057, 23.798 509.077, 17.532 533.460 C 15.526 541.265, 15.526 558.735, 17.532 566.540 C 22.665 586.514, 36.061 602.939, 54.195 611.492 C 69.173 618.556, 43.919 618, 350.050 618 C 622.097 618, 626.808 617.967, 634.391 616.028 C 646.639 612.895, 655.258 607.841, 665.049 598.049 C 678.947 584.152, 685 569.574, 685 550 C 685 530.426, 678.947 515.848, 665.049 501.951 C 655.258 492.159, 646.639 487.105, 634.391 483.972 C 626.805 482.032, 622.207 482.001, 349.590 482.066 C 109.895 482.123, 71.758 482.329, 67 483.593 M 509 520.479 C 509 520.742, 510.228 524.455, 511.730 528.729 C 514.184 535.716, 514.460 537.861, 514.460 550 C 514.460 562.139, 514.184 564.284, 511.730 571.271 C 510.228 575.545, 509 579.258, 509 579.521 C 509 579.784, 534.763 580, 566.250 579.999 L 623.500 579.998 629.500 577.121 C 640.584 571.805, 646.980 561.881, 646.980 550 C 646.980 538.119, 640.584 528.195, 629.500 522.879 L 623.500 520.002 566.250 520.001 C 534.763 520, 509 520.216, 509 520.479" stroke="none" fill="none" fill-rule="evenodd"></path></svg>
+					</div>
+					<div class="imc-dades">
+						<p>Observaciones sobre el progreso del alumno/a</p>
+						<span>Informe personal por traslado<br>Anexo X - Apartado D</span>
+					</div>
+			</a></li>
+			<li><a href="https://docent.edu.gva.es/md-front/www/" data-href="/observacions/expedient" class="imc-bt-observacions-expedient">
+					<div class="imc-icona">
+						<svg viewBox="0 0 512 512" xml:space="preserve">
+							<g>
+								<path d="M256,96C144.341,96,47.559,161.021,0,256c47.559,94.979,144.341,160,256,160c111.656,0,208.439-65.021,256-160
+									C464.441,161.021,367.656,96,256,96z M382.225,180.852c30.082,19.187,55.572,44.887,74.719,75.148
+									c-19.146,30.261-44.639,55.961-74.719,75.148C344.428,355.257,300.779,368,256,368c-44.78,0-88.428-12.743-126.225-36.852
+									c-30.08-19.188-55.57-44.888-74.717-75.148c19.146-30.262,44.637-55.962,74.717-75.148c1.959-1.25,3.938-2.461,5.929-3.65
+									C130.725,190.866,128,205.613,128,221c0,70.691,57.308,128,128,128c70.691,0,128-57.309,128-128
+									c0-15.387-2.725-30.134-7.703-43.799C378.285,178.39,380.266,179.602,382.225,180.852z M256,205c0,26.51-21.49,48-48,48
+									s-48-21.49-48-48s21.49-48,48-48S256,178.49,256,205z"></path>
+							</g>
+						</svg>
+					</div>
+					<div class="imc-dades">
+						<p>Observaciones</p>
+						<span>Expediente Académico<br>Anexo XI - Apartado G</span>
+					</div>
+			</a></li>
+			<!-- <li><a href="" data-href="/informes" class="imc-bt-informes">
+					<div class="imc-icona">
+						<svg viewBox="0 0 131.000000 131.000000"
+							preserveAspectRatio="xMidYMid meet">
+							<g
+								transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none">
+								<path
+								d="M308 1172 c-57 -35 -58 -40 -58 -517 0 -481 1 -490 61 -520 43 -23 697 -22 740 1 55 28 59 53 59 376 l-1 293 -181 193 -181 192 -206 0 c-176 0 -210 -3 -233 -18z m392 -179 c0 -182 31 -213 213 -213 l107 0 -2 -282 -3 -283 -335 0 -335 0 -3 430 c-1 237 0 436 3 443 3 9 49 12 180 12 l175 0 0 -107z" ></path>
+								<path
+								d="M580 520 l0 -30 155 0 155 0 0 30 0 30 -155 0 -155 0 0 -30z" ></path>
+								<path
+								d="M420 350 l0 -30 235 0 235 0 0 30 0 30 -235 0 -235 0 0 -30z" ></path>
+							</g>
+						</svg>
+					</div>
+					<div class="imc-dades">
+						<p>Informes</p>
+						<span>CreaciÃ³ de documents en format PDF</span>
+					</div>
+			</a></li> -->
+		</ul>
+
+	</div>
+</section>
+
+<!-- ajuda -->
+<section class="imc-seccio imc-seccio-ajuda imc-se-aj imc-seccio-vist-no imc-seccio-marc imc-app-es-total" id="imc-seccio-ajuda" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-ajuda-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-ajuda-labelledby">Ayuda</h1>
+		</header>
+
+		<div class="imc-contingut">
+
+			<p>El Módulo Docente 2 permite trabajar en línea utilizando no solo el ordenador, sino otros dispositivos como teléfonos móviles o tabletas táctiles.</p>
+
+			<p>Además, incluye mejoras en las funcionalidades existentes para la versión previa e incorpora otras nuevas.</p>
+
+			<p>La presente guía explica su funcionamiento.</p>
+
+			<p class="imc-aj-descarrega">
+				<a href="https://docent.edu.gva.es/md-front/www/#" download=""> <strong>Ayuda Módulo Docente 2</strong>
+					<span></span> <span></span>
+				</a>
+			</p>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- horari de sessions -->
+<section class="imc-seccio imc-seccio-horari imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres imc-seccio-activa" id="imc-seccio-horari" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-label="Horario de sesiones" aria-labelledby="imc-seccio-horari-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1>Horario de sesiones</h1>
+			<!--
+			<a href="javascript:;" class="imc-bt-text imc-bt-imprimix">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+						<path d="M480 1168 c-40 -67 -37 -124 21 -323 11 -38 8 -49 -43 -186 -85 -224 -99 -247 -183 -289 -98 -48 -133 -76 -166 -128 -34 -54 -36 -85 -9 -112 27 -27 51 -25 117 7 73 36 138 101 169 167 l24 53 196 33 c183 31 197 33 222 18 67 -40 189 -80 257 -85 59 -4 75 -1 103 16 17 11 32 28 32 37 0 27 -63 81 -111 94 -53 15 -204 29 -230 23 -10 -3 -33 4 -52 16 -47 29 -148 136 -191 204 -53 83 -58 100 -40 144 36 84 7 261 -52 320 -31 31 -41 29 -64 -9z m193 -605 c80 -83 88 -72 -81 -98 -151 -22 -144 -24 -116 33 13 26 33 85 45 131 l23 84 30 -39 c17 -22 62 -71 99 -111z"></path>
+					</g>
+				</svg>
+				<span>Imprimir</span>
+			</a>
+			-->
+			<a href="javascript:;" class="imc-bt-text imc-bt-calendari" style="display: block;"> <svg viewBox="0 0 131.0 131.0" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+						<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+						<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+						<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+						<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+						<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+					</g>
+				</svg> <span>Calendario escolar</span>
+			</a>
+			<p style="display: none;">Faltas, agenda y comunicaciones por agrupación</p>
+		</header>
+		<!--
+		<p class="imc-ho-calendari">
+			<strong>Sesiones de la semana</strong>
+		</p>
+		-->
+		<p class="imc-horari-sessions-info" tabindex="0" aria-label="Sesiones del 24 al 18 de  septiembre de 2025.">Sesiones del 24 al 18 de  septiembre de 2025.</p><ul class="imc-horari-dies" style="display: block;" data-data="2025-09-22">
+		<li class="imc-horari-dia">
+			<h2 class="imc-dia" tabindex="0" data-data="2025-09-24">Miércoles, 24 de septiembre de 2025</h2>
+			<ul class="imc-horari-sessions">
+		<li data-grups="Guardia" data-grupsid="-1," data-dia="3" data-desde="11:05" data-fins="12:00" data-sessio="1586246662" data-horari="1589820375," data-data="2025-09-24" data-materia="" data-materiesid="-1," data-sensefaltes="" data-titular="" data-tipus="" data-curs="">
+			<a href="javascript:;">
+				<p class="imc-hora">11:05 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">Guardia</span>
+					<span class="imc-grup-nom">G</span>
+				</p>
+				<p class="imc-materia"></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="3" data-desde="12:00" data-fins="12:55" data-sessio="1586246668" data-horari="1589821719," data-data="2025-09-24" data-materia="Tutoría Primero" data-materiesid="3152688270," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">12:00 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Tutoría Primero<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="2CFS DAW,2CFSDAW," data-grupsid="3417988457,3419608272," data-dia="3" data-desde="13:05" data-fins="14:00" data-sessio="1586246674" data-horari="1589822533,1589822534," data-data="2025-09-24" data-materia="Desarrollo WEB en entorno servidor##" data-materiesid="3152865926,3152688292," data-sensefaltes="" data-titular="" data-tipus="" data-curs="2CFS##">
+			<a href="javascript:;">
+				<p class="imc-hora">13:05 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">2CFS DAW, 2CFSDAW</span>
+					<span class="imc-grup-nom">2CS DESARROLLO APLICACIO WEB, 2CS DESARROL APLICACIO WEB LOE</span>
+				</p>
+				<p class="imc-materia">Desarrollo WEB en entorno servidor<strong>/2CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="2CFS DAW,2CFSDAW," data-grupsid="3417988457,3419608272," data-dia="3" data-desde="14:00" data-fins="14:55" data-sessio="1586246681" data-horari="1589823809,1589823810," data-data="2025-09-24" data-materia="Desarrollo WEB en entorno servidor##" data-materiesid="3152865926,3152688292," data-sensefaltes="" data-titular="" data-tipus="" data-curs="2CFS##">
+			<a href="javascript:;">
+				<p class="imc-hora">14:00 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">2CFS DAW, 2CFSDAW</span>
+					<span class="imc-grup-nom">2CS DESARROLLO APLICACIO WEB, 2CS DESARROL APLICACIO WEB LOE</span>
+				</p>
+				<p class="imc-materia">Desarrollo WEB en entorno servidor<strong>/2CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	</ul>
+		</li>
+	
+		<li class="imc-horari-dia">
+			<h2 class="imc-dia" tabindex="0" data-data="2025-09-23">Martes, 23 de septiembre de 2025</h2>
+			<ul class="imc-horari-sessions">
+		<li data-grups="2CFS DAW,2CFSDAW," data-grupsid="3417988457,3419608272," data-dia="2" data-desde="12:10" data-fins="13:05" data-sessio="1585456652" data-horari="1586198725,1586198726," data-data="2025-09-23" data-materia="Desarrollo WEB en entorno servidor##" data-materiesid="3152865926,3152688292," data-sensefaltes="" data-titular="" data-tipus="" data-curs="2CFS##">
+			<a href="javascript:;">
+				<p class="imc-hora">12:10 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">2CFS DAW, 2CFSDAW</span>
+					<span class="imc-grup-nom">2CS DESARROLLO APLICACIO WEB, 2CS DESARROL APLICACIO WEB LOE</span>
+				</p>
+				<p class="imc-materia">Desarrollo WEB en entorno servidor<strong>/2CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="2CFS DAW,2CFSDAW," data-grupsid="3417988457,3419608272," data-dia="2" data-desde="13:05" data-fins="14:00" data-sessio="1585456658" data-horari="1586199517,1586199518," data-data="2025-09-23" data-materia="Desarrollo WEB en entorno servidor##" data-materiesid="3152865926,3152688292," data-sensefaltes="" data-titular="" data-tipus="" data-curs="2CFS##">
+			<a href="javascript:;">
+				<p class="imc-hora">13:05 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">2CFS DAW, 2CFSDAW</span>
+					<span class="imc-grup-nom">2CS DESARROLLO APLICACIO WEB, 2CS DESARROL APLICACIO WEB LOE</span>
+				</p>
+				<p class="imc-materia">Desarrollo WEB en entorno servidor<strong>/2CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	</ul>
+		</li>
+	
+		<li class="imc-horari-dia">
+			<h2 class="imc-dia" tabindex="0" data-data="2025-09-22">Lunes, 22 de septiembre de 2025</h2>
+			<ul class="imc-horari-sessions">
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="1" data-desde="08:55" data-fins="09:50" data-sessio="1583289144" data-horari="1584882755," data-data="2025-09-22" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">08:55 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="1" data-desde="09:50" data-fins="10:45" data-sessio="1583289149" data-horari="1584883684," data-data="2025-09-22" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">09:50 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="1" data-desde="11:05" data-fins="12:00" data-sessio="1583289158" data-horari="1584884544," data-data="2025-09-22" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">11:05 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	</ul>
+		</li>
+	
+		<li class="imc-horari-dia">
+			<h2 class="imc-dia" tabindex="0" data-data="2025-09-19">Viernes, 19 de septiembre de 2025</h2>
+			<ul class="imc-horari-sessions">
+		<li data-grups="Guardia" data-grupsid="-1," data-dia="5" data-desde="08:00" data-fins="08:55" data-sessio="1577992991" data-horari="1582237960," data-data="2025-09-19" data-materia="" data-materiesid="-1," data-sensefaltes="" data-titular="" data-tipus="" data-curs="">
+			<a href="javascript:;">
+				<p class="imc-hora">08:00 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">Guardia</span>
+					<span class="imc-grup-nom">G</span>
+				</p>
+				<p class="imc-materia"></p>
+			</a>
+		</li>
+	
+		<li data-grups="2CFS DAW" data-grupsid="3417988457," data-dia="5" data-desde="09:50" data-fins="10:45" data-sessio="1577993002" data-horari="1582239943," data-data="2025-09-19" data-materia="Desarrollo WEB en entorno servidor" data-materiesid="3152865926," data-sensefaltes="" data-titular="" data-tipus="" data-curs="2CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">09:50 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">2CFS DAW</span>
+					<span class="imc-grup-nom">2CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Desarrollo WEB en entorno servidor<strong>/2CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="2CFS DAW" data-grupsid="3417988457," data-dia="5" data-desde="11:15" data-fins="12:10" data-sessio="1577993012" data-horari="1582241078," data-data="2025-09-19" data-materia="Desarrollo WEB en entorno servidor" data-materiesid="3152865926," data-sensefaltes="" data-titular="" data-tipus="" data-curs="2CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">11:15 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">2CFS DAW</span>
+					<span class="imc-grup-nom">2CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Desarrollo WEB en entorno servidor<strong>/2CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="5" data-desde="12:10" data-fins="13:05" data-sessio="1577993016" data-horari="1582241973," data-data="2025-09-19" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">12:10 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="5" data-desde="13:05" data-fins="14:00" data-sessio="1577993023" data-horari="1582242918," data-data="2025-09-19" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">13:05 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	</ul>
+		</li>
+	
+		<li class="imc-horari-dia">
+			<h2 class="imc-dia" tabindex="0" data-data="2025-09-18">Jueves, 18 de septiembre de 2025</h2>
+			<ul class="imc-horari-sessions">
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="4" data-desde="08:00" data-fins="08:55" data-sessio="1577992992" data-horari="1582238116," data-data="2025-09-18" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">08:00 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="4" data-desde="08:55" data-fins="09:50" data-sessio="1577992994" data-horari="1582238433," data-data="2025-09-18" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">08:55 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="1CFS DAW" data-grupsid="3417988513," data-dia="4" data-desde="09:50" data-fins="10:45" data-sessio="1577993001" data-horari="1582239733," data-data="2025-09-18" data-materia="Programación" data-materiesid="3152688274," data-sensefaltes="" data-titular="" data-tipus="" data-curs="1CFS">
+			<a href="javascript:;">
+				<p class="imc-hora">09:50 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">1CFS DAW</span>
+					<span class="imc-grup-nom">1CS DESARROLLO APLICACIO WEB</span>
+				</p>
+				<p class="imc-materia">Programación<strong>/1CFS</strong><strong>/OB</strong></p>
+			</a>
+		</li>
+	
+		<li data-grups="Guardia" data-grupsid="-1," data-dia="4" data-desde="13:05" data-fins="14:00" data-sessio="1577993022" data-horari="1582242764," data-data="2025-09-18" data-materia="" data-materiesid="-1," data-sensefaltes="" data-titular="" data-tipus="" data-curs="">
+			<a href="javascript:;">
+				<p class="imc-hora">13:05 h.</p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi">Guardia</span>
+					<span class="imc-grup-nom">G</span>
+				</p>
+				<p class="imc-materia"></p>
+			</a>
+		</li>
+	</ul>
+		</li>
+	</ul>
+
+	</div>
+</section>
+
+<!-- horari de guardies -->
+<section class="imc-seccio imc-seccio-horari-guardia imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres" id="imc-seccio-horari-guardia" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-horari-guardia-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-horari-guardia-labelledby">Sesiones de Guardia</h1>
+		</header>
+
+		<ul class="imc-sessions-guardia-dies">
+			<!-- contingut dinamic -->
+		</ul>
+
+	</div>
+</section>
+
+<!-- dietari -->
+<section class="imc-seccio imc-seccio-dietari imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres" id="imc-seccio-dietari" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-dietari-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-dietari-labelledby">Dietario</h1>
+		</header>
+
+		<ul class="imc-dietari-dies">
+			<!-- contingut dinamic -->
+		</ul>
+
+	</div>
+</section>
+
+<!-- comunicacions safata -->
+<section class="imc-seccio imc-seccio-comunicacions-safata imc-se-co-sa imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres" id="imc-seccio-comunicacions-safata" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-comunicacions-safata-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-comunicacions-safata-labelledby">Mensajes pendientes</h1>
+		</header>
+
+		<div class="imc-iniciades-desde-tutor">
+			<a href="javascript:;">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M555 1225 c-20 -19 -25 -34 -25 -74 0 -56 -18 -76 -78 -87 -27 -5 -38 -2 -60 19 -38 35 -70 50 -96 43 -28 -7 -126 -109 -126 -131 0 -23 18 -55 48 -87 20 -22 23 -33 18 -59 -12 -62 -31 -79 -87 -79 -40 0 -55 -5 -74 -25 -22 -21 -25 -33 -25 -95 0 -62 3 -74 25 -95 19 -20 34 -25 74 -25 56 0 76 -18 87 -78 5 -27 2 -38 -19 -60 -29 -32 -47 -65 -47 -87 0 -22 98 -124 126 -131 26 -7 58 8 96 44 22 20 33 23 59 18 62 -12 79 -31 79 -87 0 -40 5 -55 25 -74 21 -22 33 -25 95 -25 62 0 74 3 95 25 20 19 25 34 25 74 0 56 17 75 79 87 26 5 37 2 59 -18 38 -36 70 -51 96 -44 28 7 126 109 126 131 0 22 -18 55 -47 87 -21 22 -24 33 -19 60 11 60 31 78 87 78 40 0 55 5 74 25 37 36 37 154 0 190 -19 20 -34 25 -74 25 -56 0 -75 17 -87 79 -5 26 -2 37 18 59 30 32 48 64 48 87 0 22 -98 124 -126 131 -26 7 -58 -8 -96 -43 -22 -21 -33 -24 -60 -19 -60 11 -78 31 -78 87 0 40 -5 55 -25 74 -21 22 -33 25 -95 25 -62 0 -74 -3 -95 -25z m217 -400 c114 -81 120 -259 11 -342 -108 -82 -265 -47 -323 72 -32 66 -26 158 15 217 45 63 104 90 187 86 55 -3 75 -9 110 -33z"></path>
+					</g>
+				</svg> <span>Configura las comunicaciones</span>
+			</a>
+			<label tabindex="0" class="imc-com-des-de-wf">
+				<div class="imc-check">
+					<input type="checkbox" disabled=""> <span></span>
+				</div> <span>Comunicaciones desde Web Família</span>
+			</label>
+		</div>
+
+		<div class="imc-com-noves">
+
+			<ul class="imc-co-missatges">
+				<!-- contingut dinamic -->
+			</ul>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- grups -->
+<section class="imc-seccio imc-seccio-grups imc-se-gr imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres" id="imc-seccio-grups" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-grups-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-grups-labelledby">Grupos</h1>
+			<div>
+				<p>Escoja un grupo para trabajar.</p>
+				<p><span class="imc-soc-tutor">Soy tutor/a</span> <span class="imc-soc-subtutor">Soy subtutor/a</span></p>
+			</div>
+		</header>
+
+		<div class="imc-grups-contingut">
+			<!-- contingut dinamic -->
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+
+<!-- observacions progres -->
+<section class="imc-seccio imc-seccio-obs-progres imc-se-obs-pr imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-obs-progres" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-obs-progres-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header id="imc-seccio-obs-progres-labelledby">
+			<h1>Observaciones sobre el progreso del alumno/a</h1>
+			<h2>Informe personal por traslado - Anexo X - Apartado D</h2>
+		</header>
+
+		<div class="imc--contingut">
+			<!-- contingut dinamic -->
+		</div>
+
+	</div>
+</section>
+
+
+<!-- observacions expedient -->
+<section class="imc-seccio imc-seccio-obs-expedient imc-se-obs-ex imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-obs-expedient" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-obs-expedient-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header id="imc-seccio-obs-expedient-labelledby">
+			<h1>Observaciones</h1>
+			<h2>Expediente Académico - Anexo XI - Apartado G</h2>
+		</header>
+
+		<div class="imc--contingut">
+			<!-- contingut dinamic -->
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+
+<!-- tasques-diaries -->
+<section class="imc-seccio imc-seccio-tasques-diaries imc-se-ta-di imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-tasques-diaries" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-tasques-diaries-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header id="imc-seccio-tasques-diaries-labelledby">
+			<h1>Tareas diarias</h1>
+			<h2>Faltas, retrasos y comportamiento</h2>
+		</header>
+
+		<div class="imc-pes">
+			<!-- imc-pes-scroll -->
+			<div class="imc-pes-menu" role="tablist">
+				<ul>
+					<li class="imc-seleccionada">
+						<a href="javascript:;" role="tab" aria-selected="true" id="imc-tas-perSessio-pes" aria-controls="imc-tas-perSessio">Por sesión</a>
+					</li>
+					<li>
+						<a href="javascript:;" role="tab" aria-selected="false" id="imc-tas-perAl-pes" aria-controls="imc-tas-perAl">Por alumno</a>
+					</li>
+				</ul>
+			</div>
+			<div class="imc-pes-contingut">
+				<ul>
+					<li class="imc-seleccionada" role="tabpanel" aria-labelledby="imc-tas-perSessio-pes" id="imc-tas-perSessio">
+
+						<div class="imc-td-sessions">
+							<p class="imc-ordre">
+								<span></span> <a href="javascript:;" class="imc-bt-text imc-bt-calendari"> <svg viewBox="0 0 131.0 131.0" preserveAspectRatio="xMidYMid meet">
+										<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+											<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+											<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+											<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+											<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+											<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+										</g>
+									</svg> <span>Calendario escolar</span>
+								</a>
+
+							</p>
+							<ul class="imc-sessions" data-centre="" data-grup="">
+								<!-- contingut dinamic -->
+							</ul>
+						</div>
+
+					</li>
+					<li role="tabpanel" aria-labelledby="imc-tas-perAl-pes" id="imc-tas-perAl">
+
+						<div class="imc-td-grup-alumnes">
+							<ul class="imc-grup-alumnes" data-centre="" data-grup="">
+								<!-- contingut dinamic -->
+							</ul>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- tasques alumne -->
+<section class="imc-seccio imc-seccio-tasques-alumne imc-se-ta-al imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-tasques-alumne" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-tasques-alumne-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<div class="imc-cap-carregant" id="imc-seccio-tasques-alumne-labelledby">
+			<h1>Tareas diarias</h1>
+			<h2>Faltas, retrasos y comportamiento</h2>
+		</div>
+
+		<div class="imc-contingut-carregat">
+
+			<header>
+
+				<div class="imc-alumne">
+					<a class="imc-img" title="Ficha del alumno" aria-label="Ficha del alumno">
+						<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+								<path d="M530 1227 c-48 -15 -113 -83 -128 -133 -15 -50 -15 -162 -1 -223 7 -30 7 -47 -1 -55 -23 -23 -7 -104 26 -131 6 -5 17 -27 24 -47 6 -20 22 -53 36 -73 19 -28 24 -49 24 -96 0 -85 -31 -115 -174 -174 -64 -27 -137 -66 -176 -95 -69 -51 -81 -71 -95 -162 l-6 -38 596 0 595 0 -4 22 c-3 13 -8 46 -11 73 -4 28 -11 58 -16 68 -11 19 -165 99 -277 142 -40 16 -88 42 -107 59 -33 29 -35 36 -37 96 -2 54 2 72 24 110 14 25 28 57 32 72 3 15 17 38 31 52 19 19 25 36 25 69 0 23 -5 48 -10 53 -8 8 -7 20 0 40 7 16 14 67 17 115 5 72 3 92 -15 132 -21 47 -69 87 -104 87 -10 0 -18 4 -18 9 0 5 -15 16 -34 25 -39 19 -161 20 -216 3z"></path>
+							</g>
+						</svg>
+					</a>
+					<div class="imc-dades">
+						<p>
+							<!-- contingut dinamic -->
+						</p>
+						<label class="imc-vore-no-oficials imc-label-selector" role="checkbox" aria-checked="true" tabindex="0">
+							<div class="imc-check">
+								<input type="checkbox" checked="checked"> <span></span>
+							</div> <span>Ver grupos no oficiales</span>
+						</label>
+						<label class="imc-vore-marcades imc-label-selector" role="checkbox" aria-checked="false" tabindex="0">
+							<div class="imc-check">
+								<input type="checkbox"> <span></span>
+							</div> <span>Ver las marcadas</span>
+						</label>
+						<!--
+						<label class="imc-amaga-dies-fi">
+							<div class="imc-check">
+								<input type="checkbox" />
+								<span></span>
+							</div>
+							<span>Amaga les finalitzades</span>
+						</label>
+						-->
+						<a class="imc-bt-text imc-bt-calendari" href="javascript:;">
+							<svg viewBox="0 0 131.0 131.0" preserveAspectRatio="xMidYMid meet">
+								<g stroke="none" fill="#000000" transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)">
+									<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+									<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+									<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+									<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+									<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+								</g>
+							</svg> <span>Calendario escolar</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="imc-alumne-nav">
+					<ul>
+						<li><a href="javascript:;" class="imc-bt-text imc-bt-anterior">Anterior</a></li>
+						<li><a href="javascript:;" class="imc-bt-text imc-bt-seguent">Siguiente</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<div class="imc-ta-contingut">
+
+				<ul class="imc-marca">
+					<li class="imc-cap-comportament"></li>
+					<li class="imc-cap-falta"></li>
+					<li class="imc-cap-retard"></li>
+					<li class="imc-cap-justifica"></li>
+				</ul>
+
+				<ul class="imc-cap">
+					<li><span>Comportamiento</span></li>
+					<li><span class="imc-cap-falta">Falta</span></li>
+					<li><span class="imc-cap-retard">Retraso</span></li>
+					<li><span class="imc-cap-justifica">Justifica</span></li>
+				</ul>
+
+				<ul class="imc-dies">
+					<!-- contingut dinamic -->
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- tasques sessio -->
+<section class="imc-seccio imc-seccio-tasques-sessio imc-se-ta-se imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-tasques-sessio" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-tasques-sessio-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<div class="imc-cap-carregant" id="imc-seccio-tasques-sessio-labelledby">
+			<h1>Tareas diarias</h1>
+			<h2>Faltas, retrasos y comportamiento</h2>
+		</div>
+
+		<div class="imc-contingut-carregat">
+
+			<header>
+
+				<h3 class="imc-sessio" tabindex="0">
+					<span class="imc-dia-hora"></span>
+					<strong class="imc-materia">
+						<!-- contingut dinamic -->
+					</strong>
+				</h3>
+
+				<div class="imc-sessio-ops-generiques">
+					<ul>
+						<li class="imc-sessio-sense-faltes">
+							<label class="imc-label-selector" role="checkbox" aria-checked="false" tabindex="0">
+								<div class="imc-check">
+									<input type="checkbox" tabindex="-1"> <span></span>
+								</div> <span>Sin faltas</span>
+							</label>
+						</li>
+						<li class="imc-sessio-impartida-titular">
+							<label class="imc-label-selector" role="checkbox" aria-checked="false" tabindex="0">
+								<div class="imc-check">
+									<input type="checkbox" tabindex="-1"> <span></span>
+								</div> <span>Impartida por el titular</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="imc-sessio-nav">
+					<ul>
+						<li><a href="javascript:;" class="imc-bt-text imc-bt-anterior">Anterior</a></li>
+						<li><a href="javascript:;" class="imc-bt-text imc-bt-seguent">Siguiente</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<div class="imc-ta-contingut">
+
+				<ul class="imc-marca">
+					<li class="imc-cap-comportament"></li>
+					<li class="imc-cap-falta"></li>
+					<li class="imc-cap-retard"></li>
+					<li class="imc-cap-justifica"></li>
+				</ul>
+
+				<ul class="imc-cap">
+					<li><span>Comportamiento</span></li>
+					<li><span class="imc-cap-falta">Falta</span></li>
+					<li><span class="imc-cap-retard">Retraso</span></li>
+					<li><span class="imc-cap-justifica">Justifica</span></li>
+				</ul>
+
+				<ul class="imc-alumnes">
+					<!-- contingut dinamic -->
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- agenda-escolar -->
+<section class="imc-seccio imc-seccio-agenda-escolar imc-se-ag-es imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-agenda-escolar" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-agenda-escolar-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-agenda-escolar-labelledby">Agenda escolar</h1>
+			<a href="javascript:;" class="imc-bt-text imc-bt-calendari"> <svg viewBox="0 0 131.0 131.0" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+						<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+						<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+						<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+						<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+						<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+					</g>
+				</svg> <span>Calendario escolar</span>
+			</a>
+		</header>
+
+		<div class="imc-pes">
+			<div class="imc-pes-menu" role="tablist">
+				<ul>
+					<li class="imc-seleccionada">
+						<a href="javascript:;" role="tab" aria-selected="true" id="imc-ag-act-pes" aria-controls="imc-ag-act">Actividades</a>
+					</li>
+					<li class="imc-nova-tasca">
+						<a href="javascript:;" role="tab" aria-selected="false" id="imc-ag-nova-pes" aria-controls="imc-ag-nova" aria-label="Nueva actividad" class="imc-sense-marca">Nueva</a>
+					</li>
+				</ul>
+			</div>
+			<div class="imc-pes-contingut">
+				<ul>
+					<li class="imc-seleccionada" role="tabpanel" aria-labelledby="imc-ag-act-pes" id="imc-ag-act">
+
+						<ul class="imc-tasques">
+							<!-- contingut dinamic -->
+						</ul>
+
+					</li>
+					<li role="tabpanel" aria-labelledby="imc-ag-nova-pes" id="imc-ag-nova">
+
+						<form>
+
+							<input type="hidden" class="imc-f-id">
+
+							<div class="imc-f-element imc-f-el-enviar-a imc-f-enviar-a" data-type="enviarA">
+								<div class="imc-f-etiqueta">
+									<label id="imc_co_enviarA_2">Enviar a</label>
+								</div>
+								<div class="imc-f-control">
+									<ul role="radiogroup" aria-labelledby="imc_co_enviarA_2">
+										<li>
+											<label class="imc-label-selector" role="radio" aria-checked="true" tabindex="0">
+												<div class="imc-radio">
+													<input type="radio" id="imc_f_enviar_T" name="imc_f_enviar" value="T" tabindex="-1" checked=""> <span></span>
+												</div> <span>Todo el grupo</span>
+											</label>
+										</li>
+										<li>
+											<label class="imc-label-selector" role="radio" aria-checked="false" tabindex="0">
+												<div class="imc-radio">
+													<input type="radio" id="imc_f_enviar_M" name="imc_f_enviar" value="M" tabindex="-1"> <span></span>
+												</div> <span>Escoger materia</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-materia imc-f-materia" id="imc-f-materia" data-type="materia">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_materia">Materia</label>
+								</div>
+								<div class="imc-f-control">
+									<select id="imc_f_materia" name="imc_f_materia">
+										<!-- contingut dinamic -->
+									</select>
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-data" data-type="data">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_data">Fecha de ejecución</label>
+								</div>
+								<div class="imc-f-control">
+									<input id="imc_f_data" name="imc_f_data" type="date" class="imc-f-data" aria-required="true">
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-assumpte" data-type="assumpte">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_assumpte">Asunto</label>
+								</div>
+								<div class="imc-f-control">
+									<input id="imc_f_assumpte" name="imc_f_assumpte" type="text" class="imc-f-assumpte" aria-required="true">
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-missatge" data-type="missatge">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_missatge">Mensaje</label>
+								</div>
+								<div class="imc-f-control">
+									<textarea id="imc_f_missatge" name="imc_f_missatge" type="text" class="imc-f-missatge imc-f-stretchy" aria-required="true" style="height: 59px;"></textarea>
+								</div>
+							</div>
+
+							<ul class="imc-f-botonera">
+								<li>
+									<button class="imc-bt imc-bt-guarda" type="button">Envíe</button>
+								</li>
+							</ul>
+
+						</form>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- alumnes llistat -->
+<section class="imc-seccio imc-seccio-alumnes imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-alumnes" data-pare="imc-seccio-menu" data-app="interna" tabindex="0">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1>Alumnes</h1>
+			<h2>Dades personals i de contacte</h2>
+		</header>
+
+		<div class="imc-alumnes-contingut">
+
+			<ul class="imc-grup-alumnes">
+				<!-- contingut dinamic -->
+			</ul>
+
+			<table>
+				<thead>
+					<tr>
+						<th><span>Alumne</span></th>
+						<th><span>Pare</span></th>
+						<th><span>Mare</span></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- alumne detall -->
+<section class="imc-seccio imc-seccio-alumne imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-alumne" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-label="Alumno" aria-labelledby="imc-seccio-alumne-labelledby">
+	<!-- -->
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1>Alumno</h1>
+
+			<div class="imc-dades-cap">
+				<div class="imc-foto">
+					<!-- contingut dinamic -->
+				</div>
+				<p class="imc-nom" id="imc-seccio-alumne-labelledby">
+					<!-- contingut dinamic -->
+				</p>
+				<p> 
+					<span class="imc-nia-titulo imc-etiqueta">Nia : </span><span class="imc-nia-etiqueta"></span>
+				</p><p>
+			</p></div>
+
+		</header>
+
+		<div class="imc-pes">
+			<div class="imc-pes-menu">
+				<ul>
+					<li class="imc-seleccionada">
+						<a href="javascript:;">Datos personales</a>
+					</li>
+					<!--
+					<li>
+						<a href="javascript:;">AcadÃ¨mic</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">Comunicacions</a>
+					</li>
+					-->
+				</ul>
+			</div>
+			<div class="imc-pes-contingut">
+				<ul>
+					<li class="imc-seleccionada">
+
+						<ul class="imc-personal">
+							<!-- contingut dinamic -->
+							<li><span class="imc-etiqueta">Fecha Nacimiento</span>
+								<p></p>
+								<span class="imc-etiqueta">Teléfono</span>
+								<p></p>
+								<span class="imc-etiqueta">Correo electrónico</span>
+								<p></p>		
+							</li>
+							<li class="imc-tutor-1"><span class="imc-etiqueta">Primer tutor/a</span>
+								<p></p>
+								<ul>
+									<li class="imc-telfÂº"><span class="imc-etiqueta">Teléfono</span>
+										<p></p></li>
+									<li class="imc-correu"><span class="imc-etiqueta">Correo electrónico</span>
+										<p></p></li>
+								</ul></li>
+							<li class="imc-tutor-2"><span class="imc-etiqueta">Segundo tutor/a</span>
+								<p></p>
+								<ul>
+									<li class="imc-telf"><span class="imc-etiqueta">Teléfono</span>
+										<p></p></li>
+									<li class="imc-correu"><span class="imc-etiqueta">Correo electrónico</span>
+										<p></p></li>
+								</ul></li>
+						</ul>
+					
+					<div id="imc-identidad-digital">			
+						<h2 class="imc-identidad-digital-titulo">Identidad digital</h2>	
+						<br>
+						<div class="imc-identidad-digital-contenedor">					
+							<div class="imc-identidad-digital-nodo">
+								<span class="imc-identidad-digital-nodo-titulo-contrasenya">Correo electrónico</span> <p><span class="imc-identidad-digital-nodo-etiqueta-correo imc-tipo-font-mono imc-identidad-mail" id="idCorreoIdentidadDigital"></span></p>
+							</div>
+							<div class="imc-identidad-digital-nodo">
+								<span class="imc-identidad-digital-nodo-titulo-contrasenya">Código de recuperación</span> <p><span class="imc-identidad-digital-nodo-etiqueta-contrasenya imc-tipo-font-mono imc-identidad-codigo"></span></p>
+							</div>
+							<div class="imc-identidad-digital-nodo">
+								<span class="imc-identidad-digital-nodo-titulo-contrasenya">Contraseña inicial</span> <p><span class="imc-identidad-digital-nodo-etiqueta-contrasenya imc-tipo-font-mono imc-identidad-contasenya"></span></p>
+							</div>
+						</div>
+						<div class="imc-identidad-digital-contenedor">
+							<button type="button" data-accio="alumnes-actualitzat" class="imc-regenerar-codigo">							
+								<span>Regenerar código de recuperación</span>
+							</button>
+							<div class="imc-identidad-digital-nodo imc-top-cambiar-contrasenya">
+								<a href="https://docent.edu.gva.es/md-front/www/" target="_blank" class="imc-cambiar-contrasenya">Cambiar contraseña</a>
+							</div>	
+						
+						</div>				
+						<div>
+							<span class="imc-identidad-digital-nodo-etiqueta-proteccion-datos">Nota: Cualquier uso salvo la comunicación de esta información al propio alumnado o a sus tutores legales queda terminantemente prohibido y podría generar responsabilidad disciplinaria y penal.</span>
+						</div>		
+					</div>
+					</li>
+					<!--
+					<li>
+						
+						<ul class="imc-academic">
+							<li>
+								<span class="imc-etiqueta">Acis:</span>
+								<p></p>
+							</li>
+							<li>
+								<span class="imc-etiqueta">Alumne amb reducciÃ³ de rÃ tio:</span>
+								<p></p>
+							</li>
+							<li>
+								<span class="imc-etiqueta">1er idioma:</span>
+								<p></p>
+							</li>
+							<li>
+								<span class="imc-etiqueta">2on idioma:</span>
+								<p></p>
+							</li>
+							<li>
+								<span class="imc-etiqueta">Bonollibre:</span>
+								<p></p>
+							</li>
+							<li>
+								<span class="imc-etiqueta">Transport:</span>
+								<p></p>
+							</li>
+							<li>
+								<span class="imc-etiqueta">Menjador:</span>
+								<p></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+					
+						<div class="imc-comunicacions">
+							<p>Cap comunicaciÃ³</p>
+						</div>
+						
+					</li>
+					-->
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- comunicacions -->
+<section class="imc-seccio imc-seccio-comunicacions imc-se-co imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-seccio-amb-grup imc-app-es-lateral" id="imc-seccio-comunicacions" data-pare="imc-seccio-menu" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-comunicacions-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-comunicacions-labelledby">Comunicaciones</h1>
+			<a href="javascript:;" class="imc-bt-text imc-bt-calendari"> <svg viewBox="0 0 131.0 131.0" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+						<path d="M370 1183 c-40 -15 -50 -35 -50 -102 0 -85 16 -111 70 -111 54 0 70 25 70 111 0 61 -3 70 -26 88 -27 21 -38 24 -64 14z"></path>
+						<path d="M873 1180 c-32 -13 -43 -41 -43 -109 0 -73 21 -101 73 -101 52 0 67 24 67 106 0 75 -4 85 -37 103 -25 13 -30 13 -60 1z"></path>
+						<path d="M140 605 l0 -455 510 0 510 0 0 455 0 455 -75 0 -75 0 0 -32 c0 -141 -194 -148 -216 -7 l-7 39 -143 0 -144 0 0 -36 c0 -53 -53 -104 -109 -104 -56 0 -100 39 -108 98 l-6 42 -68 0 -69 0 0 -455z m945 -90 l0 -290 -437 -3 -438 -2 0 295 0 295 438 -2 437 -3 0 -290z"></path>
+						<path d="M422 680 c-18 -8 -21 -14 -16 -37 9 -37 7 -36 52 -23 45 14 82 1 82 -28 0 -27 -20 -42 -57 -42 -30 0 -33 -3 -33 -30 0 -27 3 -30 30 -30 43 0 85 -42 70 -70 -14 -27 -55 -35 -104 -22 -23 6 -41 10 -42 9 -1 -1 -5 -16 -8 -34 -7 -30 -5 -32 31 -42 56 -16 103 -13 150 8 48 22 63 45 63 95 0 35 -22 68 -50 78 -9 3 -4 13 13 31 39 38 37 87 -4 121 -26 22 -40 26 -92 25 -34 0 -72 -4 -85 -9z"></path>
+						<path d="M768 667 c-43 -20 -46 -24 -41 -52 8 -39 7 -39 42 -21 16 9 32 16 36 16 3 0 5 -63 5 -140 l0 -140 40 0 40 0 -2 178 -3 177 -35 2 c-19 1 -56 -8 -82 -20z"></path>
+					</g>
+				</svg> <span>Calendario escolar</span>
+			</a>
+		</header>
+
+		<div class="imc-pes">
+			<div class="imc-pes-menu" role="tablist">
+				<ul>
+					<li class="imc-com-rebudes imc-seleccionada">
+						<a href="javascript:;" role="tab" aria-selected="true" id="imc-com-reb-pes" aria-controls="imc-com-reb">Entrada</a>
+					</li>
+					<li class="imc-com-enviades">
+						<a href="javascript:;" role="tab" aria-selected="false" id="imc-com-env-pes" aria-controls="imc-com-env">Salida</a>
+					</li>
+					<li class="imc-nou-missatge">
+						<a href="javascript:;" role="tab" aria-selected="false" id="imc-com-nou-pes" aria-controls="imc-com-nou" class="imc-sense-marca">Nueva</a>
+					</li>
+					<li class="imc-contesta-missatge imc-missatge-off">
+						<a href="javascript:;" role="tab" aria-selected="false" id="imc-com-con-pes" aria-controls="imc-com-con" class="imc-pes-off imc-sense-marca">Conteste</a>
+					</li>
+				</ul>
+			</div>
+			<div class="imc-pes-contingut">
+				<ul>
+					<li class="imc-com-rebudes imc-seleccionada" role="tabpanel" aria-labelledby="imc-com-reb-pes" id="imc-com-reb">
+
+						<ul class="imc-co-missatges">
+							<!-- contingut dinamic -->
+						</ul>
+
+					</li>
+					<li class="imc-com-enviades" role="tabpanel" aria-labelledby="imc-com-env-pes" id="imc-com-env">
+
+						<ul class="imc-co-missatges">
+							<!-- contingut dinamic -->
+						</ul>
+
+					</li>
+					<li role="tabpanel" aria-labelledby="imc-com-nou-pes" id="imc-com-nou">
+
+						<form>
+
+							<input type="hidden" class="imc-f-id">
+
+							<div class="imc-f-element imc-f-el-enviar-a imc-f-enviar-a" data-type="enviarA">
+								<div class="imc-f-etiqueta">
+									<label id="imc_co_enviarA">Enviar a</label>
+								</div>
+								<div class="imc-f-control">
+									<ul role="radiogroup" aria-labelledby="imc_co_enviarA">
+										<li>
+											<label class="imc-label-selector" role="radio" aria-checked="false" tabindex="0">
+												<div class="imc-radio">
+													<input type="radio" id="imc_f_co_enviar_T" name="imc_f_co_enviar" value="T" tabindex="-1"> <span></span>
+												</div> <span class="imc-f-enviar-a-text">Todo el grupo</span>
+											</label>
+										</li>
+										<!--
+										<li>
+											<label>
+												<div class="imc-radio">
+													<input type="radio" id="imc_f_co_enviar_M" name="imc_f_co_enviar" value="M" />
+													<span></span>
+												</div>
+												<span>Una materia</span>
+											</label>
+										</li>
+										-->
+										<li>
+											<label class="imc-label-selector" role="radio" aria-checked="true" tabindex="0">
+												<div class="imc-radio">
+													<input type="radio" id="imc_f_co_enviar_A" name="imc_f_co_enviar" value="A" tabindex="-1" checked=""> <span></span>
+												</div> <span>Alumnos</span>
+											</label>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-materia imc-f-materia" id="imc-f-co-materia" data-type="materia">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_co_materia">Materia</label>
+								</div>
+								<div class="imc-f-control">
+									<select id="imc_f_co_materia" name="imc_f_co_materia" aria-required="true">
+										<!-- contingut dinamic -->
+									</select>
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-materia imc-f-alumnes" id="imc-f-co-alumnes" data-type="alumnes">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_co_alumnes">Alumnos</label>
+								</div>
+								<div class="imc-f-control">
+									<input type="hidden" id="imc_f_co_alumnes" name="imc_f_co_alumnes">
+									<a href="javascript:;" aria-label="Alumnos"><em>Ningún alumno seleccionado</em></a>
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-assumpte" data-type="assumpte">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_co_assumpte">Asunto</label>
+								</div>
+								<div class="imc-f-control">
+									<input id="imc_f_co_assumpte" name="imc_f_co_assumpte" type="text" class="imc-f-assumpte" maxlength="160" aria-required="true">
+								</div>
+							</div>
+
+							<div class="imc-f-element imc-f-el-missatge" data-type="missatge">
+								<div class="imc-f-etiqueta">
+									<label for="imc_f_co_missatge">Mensaje</label>
+								</div>
+								<div class="imc-f-control">
+									<textarea id="imc_f_co_missatge" name="imc_f_co_missatge" type="text" class="imc-f-missatge imc-f-stretchy" maxlength="4000" aria-required="true" style="height: 59px;"></textarea>
+								</div>
+							</div>
+
+							<div class="imc-f-element">
+								<p>** Para crear hipervínculos, el formato es el siguiente: {NombreVínculo|direcciónURL}</p>
+							</div>
+
+
+							<ul class="imc-f-botonera">
+								<li>
+									<button class="imc-bt imc-bt-envia" type="button">Envíe</button>
+								</li>
+							</ul>
+
+						</form>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- informes safata -->
+<section class="imc-seccio imc-seccio-informes-safata imc-se-in-sa imc-seccio-vist-no imc-seccio-marc imc-app-es-total" id="imc-seccio-informes-safata" data-app="interna" tabindex="0" aria-live="polite" aria-relevant="all" aria-labelledby="imc-seccio-informes-safata-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-informes-safata-labelledby">Bandeja informes</h1>
+			<p>Relación de documentos en formato PDF</p>
+			
+			<div class="imc-update"><button type="button" class="imc-button-informe-update" title="Recarga Bandeja informes" aria-label="Recarga Bandeja informes"></button></div>
+		</header>
+
+		<div class="imc-contingut">
+
+			<table class="imc-informes-tabla">
+				<thead>
+					<tr>
+						<th scope="col">Informe</th>
+						<th scope="col">Solicitada</th>
+						<th scope="col">Disponible</th>
+						<th scope="col">Se borrarà</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- contingut dinÃ mic -->
+				</tbody>
+			</table>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- informes -->
+<section class="imc-seccio imc-seccio-informes imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres" id="imc-seccio-informes" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-informes-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-informes-labelledby">Informes</h1>
+		</header>
+
+		<div class="imc-contingut">
+			<ul class="imc-per-tipus" id="imc-listado-lanzadera">
+				<!-- 				<li> -->
+				<!-- 					<p>Asistencia</p> -->
+				<!-- 					<ul class="imc-informes"> -->
+				<!-- 						<li> -->
+				<!-- 							<a href="#" data-href="/cercador/assistencia/incidencies">Listado de incidencias</a> -->
+				<!-- 						</li> -->
+				<!-- 						<li> -->
+				<!-- 							<a href="#" data-href="/cercador/assistencia/plantilles">Plantillas de asistencia</a> -->
+				<!-- 						</li> -->
+				<!-- 						<li> -->
+				<!-- 							<a href="#" data-href="/cercador/assistencia/part">Parte de faltas</a> -->
+				<!-- 						</li> -->
+				<!-- 					</ul> -->
+				<!-- 				</li> -->
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- informes cercador -->
+<section class="imc-seccio imc-seccio-informes-cercador imc-se-in-ce imc-seccio-vist-no imc-seccio-marc imc-seccio-amb-centre imc-app-es-lateral imc-app-es-lateral-centres" id="imc-seccio-informes-cercador" data-pare="imc-seccio-centres" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-informes-cercador-labelledby">
+	<div class="imc-seccio-contenidor">
+		<!-- missatge requeriments -->
+		<div class="imc-alerta imc-alerta-missatge imc-alerta-missatge-requerits" id="imc-alerta-missatge-requerits" data-tipus="missatge-modal">
+			<div class="imc-al-contenidor">
+				<p>Falta campos por rellenar</p>
+				<ul>
+					<li><a href="javascript:;" class="imc-bt-text imc-bt-accepta">???</a></li>
+				</ul>
+			</div>
+		</div>
+		<header>
+			<h1 id="imc-seccio-informes-cercador-labelledby">Informes</h1>
+			<h2></h2>
+		</header>
+
+		<div class="imc-contingut">
+			<form id="imc-informes">
+
+			</form>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- personalitza -->
+<section class="imc-seccio imc-seccio-personalitza imc-sec-pe imc-seccio-vist-no imc-seccio-marc imc-app-es-total" id="imc-seccio-personalitza" data-app="interna" tabindex="0" aria-labelledby="imc-seccio-personalitza-labelledby">
+	<div class="imc-seccio-contenidor">
+
+		<header>
+			<h1 id="imc-seccio-personalitza-labelledby">Personaliza</h1>
+		</header>
+
+		<p>Actualmente la aplicación está configurada en base a <strong>2 grupos de dipositivos</strong>: móviles y de sobremesa.</p>
+
+		<p>Los <strong>móviles</strong> son equipos que se usan habitualmente de manera táctil, y los de <strong>sobremesa</strong> con algun tipo de periférico como un ratón.</p>
+
+		<p>La aplicación se muestra por defecto con el tipo que cree mejor se adapta a su dispositivo, aun así pueda escoger el otro si no le convence.</p>
+
+		<form>
+
+			<div class="imc-f-element">
+				<div class="imc-f-etiqueta">
+					<label for="imc_f_entorn">Dispositivo de trabajo</label>
+				</div>
+				<div class="imc-f-control">
+					<select id="imc_f_entorn" name="imc_f_entorn">
+						<option value="PD" selected="">Por defecto</option>
+						<option value="M">Móvil</option>
+						<option value="S">Sobremesa</option>
+					</select>
+				</div>
+			</div>
+
+			<ul class="imc-f-botonera">
+				<li>
+					<button class="imc-bt imc-bt-guarda" type="button">Guarda</button>
+				</li>
+			</ul>
+
+		</form>
+
+	</div>
+</section></div>
+
+	</div>
+
+	<!-- plantilles -->
+	<div id="imc-plantilles" class="imc-plantilles" aria-hidden="true"><div class="imc-pl-centres">
+	<a href="https://docent.edu.gva.es/md-front/www/" class="imc-bt-centre-info">
+		<div class="imc-centre-img">
+			<img src="https://docent.edu.gva.es/md-front/www/">
+		</div>
+		<p></p>
+	</a>
+	<ul class="imc-ce-opcions">
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-horari">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M496 1225 c-225 -62 -394 -250 -433 -485 -14 -81 -14 -99 0 -182 57 -335 373 -559 698 -493 394 79 597 493 419 853 -73 148 -217 264 -380 307 -68 18 -237 18 -304 0z m257 -140 c167 -43 289 -164 333 -329 62 -231 -89 -481 -326 -542 -254 -65 -507 104 -553 369 -52 305 247 580 546 502z"></path>
+						<path d="M496 904 c-24 -23 -20 -42 27 -124 38 -67 43 -82 42 -138 l-1 -62 -82 -83 c-83 -84 -94 -103 -66 -114 11 -4 43 21 105 83 87 86 89 88 133 85 38 -2 48 2 76 29 l32 31 121 -2 c111 -2 121 -1 128 17 13 37 -7 44 -133 44 l-119 0 -33 35 c-19 19 -42 35 -52 35 -13 0 -31 22 -59 72 -60 108 -85 127 -119 92z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Horario de sesiones</strong>
+					<span>Faltas, agenda y comunicaciones por agrupación</span>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-qualificacions">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+					<path d="M511 1170 c-28 -28 -50 -41 -80 -46 -47 -8 -71 -33 -71 -78 0 -21 -11 -39 -41 -67 -39 -36 -41 -41 -34 -76 10 -48 10 -98 0 -145 -7 -34 -5 -39 34 -76 30 -28 41 -47 41 -68 0 -46 25 -74 67 -74 29 0 44 -8 80 -45 48 -49 56 -51 93 -30 33 19 72 19 114 -2 l35 -16 50 46 c40 37 57 47 84 47 40 0 54 14 63 61 9 47 22 68 56 97 25 22 29 30 23 56 -9 40 -9 112 0 154 7 30 3 36 -34 71 -30 28 -41 46 -41 67 0 40 -26 74 -56 74 -35 0 -63 16 -102 57 -24 26 -39 34 -55 30 -12 -3 -38 -10 -57 -15 -24 -6 -47 -4 -74 5 -52 18 -50 18 -95 -27z m234 -129 c47 -22 109 -84 124 -124 18 -47 13 -143 -9 -186 -48 -96 -157 -146 -261 -121 -68 17 -154 96 -164 154 -14 73 -1 152 32 198 63 87 186 122 278 79z"></path>
+					<path d="M629 918 c-22 -39 -28 -43 -67 -46 -23 -2 -42 -7 -42 -11 0 -4 14 -20 31 -37 28 -27 30 -32 24 -76 -4 -27 -4 -48 -1 -48 3 0 22 9 42 21 l38 21 37 -21 c20 -12 40 -21 43 -21 4 0 4 21 0 48 -5 43 -3 49 25 76 40 38 39 46 -3 46 -40 0 -66 8 -66 21 0 5 -8 22 -19 39 l-19 31 -23 -43z"></path>
+					<path d="M287 355 l-77 -156 63 7 63 6 33 -51 c18 -28 35 -51 37 -51 3 0 38 68 79 151 63 128 71 151 57 157 -9 3 -33 23 -53 44 -26 28 -44 38 -67 38 -17 0 -36 2 -44 5 -9 4 -38 -44 -91 -150z"></path>
+					<path d="M834 463 c-19 -20 -46 -42 -59 -48 l-26 -10 76 -129 c41 -71 75 -132 75 -136 0 -4 7 -13 15 -20 13 -11 18 -5 37 40 l22 53 63 -6 64 -6 -40 74 c-135 248 -119 225 -158 225 -28 0 -42 -8 -69 -37z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Calificaciones</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-dietari">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M988 1064 c-67 -58 -229 -138 -333 -165 -64 -17 -121 -22 -293 -26 l-212 -6 -25 -29 c-23 -27 -25 -38 -25 -125 0 -91 1 -96 29 -124 27 -27 35 -29 103 -29 l73 0 0 -92 c0 -68 7 -113 23 -166 21 -67 27 -75 60 -89 50 -21 125 -13 157 17 l24 23 -26 31 c-38 45 -54 90 -54 152 -1 62 18 100 55 110 70 17 312 -80 436 -175 36 -28 71 -50 78 -51 8 0 27 13 43 29 29 29 29 30 29 149 l0 120 35 35 c23 23 35 44 35 62 0 18 -12 39 -35 62 l-35 35 0 120 c0 119 0 120 -29 149 -16 16 -36 29 -44 29 -9 0 -39 -21 -69 -46z m52 -349 l0 -274 -77 49 c-84 54 -197 102 -308 130 l-70 18 0 77 0 77 94 24 c100 25 226 82 306 138 28 19 51 35 53 35 1 1 2 -123 2 -274z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Dietario</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-comunicacions imc-com-carregant">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M220 1194 c-45 -20 -77 -50 -101 -96 -17 -34 -19 -62 -19 -314 0 -317 4 -336 82 -390 41 -29 44 -29 201 -32 l160 -3 147 -120 c81 -65 150 -119 154 -119 3 0 6 54 6 119 l0 119 113 4 c103 3 117 5 154 30 24 16 49 44 62 70 20 42 21 59 21 321 0 170 -4 286 -11 304 -15 40 -57 82 -104 104 -37 17 -71 19 -435 18 -331 0 -401 -2 -430 -15z m846 -125 c18 -20 19 -39 19 -284 0 -243 -1 -264 -19 -284 -17 -19 -31 -21 -175 -23 l-156 -3 -5 -58 -5 -59 -75 61 -74 61 -160 0 c-134 0 -162 3 -178 17 -17 15 -18 37 -18 286 0 238 2 273 17 289 15 17 41 18 413 18 391 0 397 0 416 -21z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Mensajes pendientes</strong>
+				</p>
+			</a>
+			<div class="imc-com-json"></div>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-grups">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M449 1190 c-143 -24 -207 -141 -168 -309 7 -31 6 -52 -3 -77 -10 -28 -9 -39 5 -69 9 -19 21 -35 27 -35 5 0 10 -6 10 -14 0 -7 13 -40 30 -72 20 -41 30 -74 30 -106 0 -67 -32 -100 -140 -142 l-85 -34 -3 -116 -3 -116 446 0 447 0 -6 27 c-3 16 -8 47 -11 70 -4 22 -14 48 -23 56 -16 14 -102 56 -271 133 -75 34 -89 52 -94 119 -3 38 2 60 19 90 12 22 25 51 29 65 4 14 18 38 31 53 24 29 32 84 15 103 -6 5 -3 38 7 82 13 61 14 84 4 129 -13 63 -32 89 -82 112 -19 9 -46 24 -60 32 -32 21 -92 28 -151 19z"></path>
+						<path d="M758 1190 c-25 -5 -54 -12 -64 -18 -14 -8 -12 -11 18 -21 37 -12 67 -40 88 -80 16 -31 16 -142 0 -200 -8 -32 -8 -46 1 -57 16 -19 5 -81 -19 -108 -11 -12 -22 -33 -25 -47 -4 -14 -18 -42 -32 -63 -19 -27 -25 -50 -25 -88 0 -66 21 -85 165 -147 137 -59 132 -57 180 -84 42 -23 42 -25 60 -139 5 -32 10 -38 30 -38 l25 0 0 119 0 119 -37 13 c-64 20 -152 68 -162 88 -21 39 -19 114 5 156 12 22 25 51 29 65 4 14 18 38 31 53 24 29 32 84 15 103 -6 5 -3 38 7 82 13 61 14 84 4 129 -13 63 -32 89 -82 112 -19 9 -46 24 -60 32 -32 21 -92 28 -152 19z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Grupos</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-informes">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M308 1172 c-57 -35 -58 -40 -58 -517 0 -481 1 -490 61 -520 43 -23 697 -22 740 1 55 28 59 53 59 376 l-1 293 -181 193 -181 192 -206 0 c-176 0 -210 -3 -233 -18z m392 -179 c0 -182 31 -213 213 -213 l107 0 -2 -282 -3 -283 -335 0 -335 0 -3 430 c-1 237 0 436 3 443 3 9 49 12 180 12 l175 0 0 -107z"></path>
+						<path d="M580 520 l0 -30 155 0 155 0 0 30 0 30 -155 0 -155 0 0 -30z"></path>
+						<path d="M420 350 l0 -30 235 0 235 0 0 30 0 30 -235 0 -235 0 0 -30z"></path>
+					</g>
+				</svg>
+				<p>
+					<strong>Informes</strong>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/" class="imc-centre-equips">
+				<svg x="0px" y="0px" viewBox="0 0 750 600" width="700" height="600">			
+					   <path d="m 120.17587,26.486452 c -19.10435,0 -35.20117,18.897979 -35.20117,41.326856 V 439.27121 c 0,22.42888 16.09682,41.32686 35.20117,41.32686 h 206.63281 l -22.5332,79.4802 c 0,10.21396 7.09884,18.55042 15.79883,18.55042 h 194.10156 c 8.69999,0 15.69883,-8.33646 15.79883,-18.55042 l -20.45703,-79.4802 h 201.35742 c 19.34885,0 34.94398,-18.6873 35.19727,-40.98978 l 0.002,-0.16739 V 67.813308 c 0,-22.428877 -16.09487,-41.326856 -35.19922,-41.326856 z m 7.79883,50.482834 H 703.07431 V 430.11524 H 127.9747 Z"></path>
+					   <path d="m 411.37509,193.19766 c 3.1,-7.27892 5.8,-8.68774 14.7,-7.51372 0,1.05662 0,2.23064 0,3.40466 0,39.79925 0,79.71591 0,119.51517 0,6.57451 1.2,12.56201 4.8,17.72769 4.2,5.9875 9.6,9.03995 16.2,9.62696 7.8,0.70442 15.8,1.17402 23.5,2.70025 13.4,2.70024 25.9,8.45294 36.7,18.4321 1.3,1.17402 2.6,2.58285 4.2,4.22647 -5,-1.05661 -9.5,-2.11323 -14.1,-2.81764 -13.4,-2.11324 -26.8,-2.70025 -40.2,-0.93922 -11.6,1.52623 -23.1,3.87426 -34.6,5.9875 -5.5,1.05662 -8.5,-0.82181 -11.2,-7.51372 0,-54.2397 0,-108.4794 0,-162.8365 z"></path>
+					   <path d="m 523.47509,353.33391 c -1.9,-1.99583 -3.4,-3.75686 -5,-5.40049 -13.8,-14.08823 -30.1,-21.83676 -48.1,-25.00661 -7.2,-1.29142 -14.6,-1.76103 -21.9,-2.34804 -6,-0.46961 -9.3,-4.22647 -9.3,-11.50539 0,-49.07401 0,-98.03062 0,-147.10463 0,-7.51373 3.7,-11.38799 10.1,-11.15319 12,0.35221 23.7,2.11324 35.1,6.80932 15.4,6.2223 28.1,16.43627 37,32.75514 1.2,2.11323 2.1,5.04828 2.1,7.63112 0.1,51.06985 0.1,102.25709 0.1,153.32694 0,0.46961 0,1.05662 -0.1,1.99583 z"></path>
+					   <path d="m 536.77509,352.9817 c 0,-1.29142 0,-2.34803 0,-3.52205 0,-48.95661 0.1,-97.91322 -0.1,-146.75243 0,-7.27892 2.1,-12.91421 5.8,-18.1973 11.7,-16.90588 27.2,-26.29803 45.1,-30.4071 8,-1.87843 16.2,-2.34804 24.4,-3.16985 5.6,-0.46961 9.3,4.10906 9.3,11.03578 0,27.35465 0,54.5919 0,81.94655 0,21.48456 0,42.96911 0,64.57107 0,8.10073 -3.2,11.975 -10.2,12.0924 -14.9,0.35221 -29.4,2.93505 -43.3,9.27475 -10.9,4.93088 -20.6,11.975 -29,21.48456 -0.4,0.46961 -0.8,0.93921 -1.2,1.29142 -0.2,0.2348 -0.4,0.2348 -0.8,0.3522 z"></path>
+					   <path d="m 548.57509,361.08244 c 4.5,-3.63946 8.4,-7.39632 12.7,-10.33137 14.1,-9.62696 29.5,-13.50123 45.6,-14.44044 3.7,-0.2348 7.5,-0.1174 11.1,-1.17402 10.4,-3.16985 16.3,-12.91421 16.4,-26.29803 0,-39.91666 0,-79.71592 0,-119.63258 0,-1.17402 0,-2.34804 0,-3.63946 2.8,0 5.2,-0.23481 7.7,0.1174 3.6,0.46961 6.5,4.22647 7,8.68774 0.1,0.70442 0.1,1.40883 0.1,2.23064 0,52.12646 0,104.25292 0,156.37938 0,6.45711 -3.4,11.03579 -8.3,11.03579 -1.8,0 -3.7,-0.58701 -5.5,-0.93922 -20.4,-5.16568 -41,-7.39632 -61.7,-5.63529 -8.3,0.58701 -16.3,2.34804 -25.1,3.63946 z"></path>
+					   <path d="m 183.57509,396.53782 c -5.3,-2.11323 -7.2,-6.5745 -7.1,-13.03161 0.3,-14.44044 0,-28.88088 0.5,-43.20391 0.7,-17.02329 5.6,-32.52034 13.9,-46.37377 10.3,-17.25809 24,-29.35049 41,-36.0424 8.3,-3.28725 17,-4.69607 25.7,-4.69607 16.1,0 32.1,-0.23481 48.2,0.3522 18,0.70441 33.8,8.68775 47.5,22.30637 11.4,11.38799 19.4,25.47622 24.2,42.2647 2.8,9.97916 4,20.31053 4.1,30.75931 0.1,11.50539 -0.1,23.12818 0.1,34.63357 0.1,6.45711 -1.8,10.91838 -7.1,13.03161 -63.8,0 -127.4,0 -191,0 z"></path>
+					   <path d="m 222.37509,178.75723 c 0.4,-36.98162 25.8,-66.5669 56.9,-66.2147 31.6,0.35221 56.5,30.0549 56.3,66.80171 -0.2,36.8642 -25.9,66.44949 -56.7,66.09729 -31.8,-0.35221 -56.4,-29.9375 -56.5,-66.6843 z"></path>				
+				</svg>
+				<p>
+					<strong>Aulas virtuales</strong>
+				</p>
+			</a>
+		</li>
+	</ul>
+	<!--
+	<p>Grupos en el centro:</p>
+	<ul class="imc-grups"></ul>
+	-->
+</div>
+
+<div class="imc-pl-agenda">
+	<ul class="imc-html-tasca">
+		<li>
+			<a href="https://docent.edu.gva.es/md-front/www/#agenda/escolar/2" data-id="">
+				<div class="imc-icona">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M490 1093 c-12 -15 -19 -35 -17 -43 2 -9 66 -100 141 -203 75 -102 136 -189 136 -192 0 -3 -61 -90 -136 -192 -75 -103 -139 -194 -141 -203 -3 -10 7 -30 20 -46 43 -50 62 -34 234 201 84 115 156 217 159 227 3 9 0 27 -6 38 -21 39 -291 405 -312 423 -29 24 -53 21 -78 -10z"></path>
+						</g>
+					</svg>
+				</div>
+				<div class="imc-dades">
+					<p class="imc-dia"></p>
+					<p class="imc-grup"></p>
+					<p class="imc-materia"></p>
+					<p class="imc-assumpte"></p>
+					<p class="imc-missatge"></p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="imc-html-tasca-per-sincronitzar">
+		<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+				<path d="M225 875 c-66 -85 -121 -159 -123 -165 -2 -6 21 -10 57 -10 l61 0 0 -33 c0 -76 72 -261 107 -274 9 -4 121 75 196 137 4 4 -4 31 -18 61 -13 30 -25 66 -25 82 0 26 1 27 60 27 33 0 60 2 60 5 0 2 -33 46 -72 97 -40 52 -95 124 -123 160 -27 37 -52 67 -55 68 -3 0 -59 -70 -125 -155z"></path>
+				<path d="M899 857 l-96 -73 25 -47 c13 -26 25 -61 26 -79 l1 -33 -57 -3 c-32 -2 -58 -6 -58 -10 0 -13 239 -317 249 -317 8 0 251 310 251 320 0 3 -26 5 -58 5 l-58 0 -12 78 c-13 83 -76 225 -103 229 -7 2 -57 -30 -110 -70z"></path>
+			</g>
+		</svg>
+	</div>
+</div>
+
+<div class="imc-pl-comunicacions">
+	<ul class="imc-html-missatge-safata">
+		<li>
+			<div class="imc-co-missatge" data-id="" tabindex="0" role="button">
+				<div class="imc-co-llistat">
+					<p class="imc-de"></p>
+					<p class="imc-dia"></p>
+					<p class="imc-tutor"></p>
+					<p class="imc-assumpte"></p>
+				</div>
+				<div class="imc-co-detall">
+					<div class="imc-enviament">
+						<p class="imc-de"></p>
+						<p class="imc-dia"></p>
+						<p class="imc-tutor"></p>
+						<p class="imc-assumpte"></p>
+						<p class="imc-detall"></p>
+					</div>
+					<div class="imc-resposta">
+						<p class="imc-de"></p>
+						<p class="imc-dia"></p>
+						<p class="imc-tutor"></p>
+						<p class="imc-detall"></p>
+					</div>
+					<div class="imc-justificacio">
+						<p class="imc-alumne"></p>
+						<p class="imc-dia"></p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<ul class="imc-html-comunicacio">
+		<li>
+			<div class="imc-co-missatge" data-id="" tabindex="0" role="button">
+				<div class="imc-co-llistat">
+					<p class="imc-de"></p>
+					
+					<p class="imc-dia"></p>
+					<p class="imc-tutor"></p>
+					<p class="imc-assumpte"></p>
+				</div>
+				<div class="imc-co-detall">
+					<div class="imc-enviament">
+						<p class="imc-de"></p>
+						<p class="imc-dia"></p>
+						<p class="imc-tutor"></p>
+						<p class="imc-estatcom"></p>
+						<p class="imc-assumpte"></p>
+						<p class="imc-detall"></p>
+					</div>
+					<div class="imc-resposta">
+						<p class="imc-de"></p>
+						<p class="imc-dia"></p>
+						<p class="imc-tutor"></p>
+						<p class="imc-estatcom"></p>
+						<p class="imc-detall"></p>
+					</div>
+					<div class="imc-justificacio">
+						<p class="imc-alumne"></p>
+						<p class="imc-dia"></p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<ul class="imc-html-missatge">
+		<li>
+			<div class="imc-co-missatge" data-id="" role="button">
+				<div class="imc-icona">
+					<svg class="imc-ico-entrada" viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M490 1093 c-12 -15 -19 -35 -17 -43 2 -9 66 -100 141 -203 75 -102 136 -189 136 -192 0 -3 -61 -90 -136 -192 -75 -103 -139 -194 -141 -203 -3 -10 7 -30 20 -46 43 -50 62 -34 234 201 84 115 156 217 159 227 3 9 0 27 -6 38 -21 39 -291 405 -312 423 -29 24 -53 21 -78 -10z"></path>
+						</g>
+					</svg>
+					<svg class="imc-ico-seleccionada" version="1.0" viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+						</g>
+					</svg>
+				</div>
+				<div class="imc-rebut">
+					<p class="imc-de"></p>
+					<p class="imc-dia"></p>
+					<p class="imc-assumpte"></p>
+					<p class="imc-detall"></p>
+				</div>
+				<div class="imc-contestacio">
+					<div class="imc-co-icona">
+						<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M490 1093 c-12 -15 -19 -35 -17 -43 2 -9 66 -100 141 -203 75 -102 136 -189 136 -192 0 -3 -61 -90 -136 -192 -75 -103 -139 -194 -141 -203 -3 -10 7 -30 20 -46 43 -50 62 -34 234 201 84 115 156 217 159 227 3 9 0 27 -6 38 -21 39 -291 405 -312 423 -29 24 -53 21 -78 -10z"></path>
+							</g>
+						</svg>
+					</div>
+					<p class="imc-dia"></p>
+					<p class="imc-detall"></p>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="imc-html-missatge-per-sincronitzar">
+		<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+				<path d="M225 875 c-66 -85 -121 -159 -123 -165 -2 -6 21 -10 57 -10 l61 0 0 -33 c0 -76 72 -261 107 -274 9 -4 121 75 196 137 4 4 -4 31 -18 61 -13 30 -25 66 -25 82 0 26 1 27 60 27 33 0 60 2 60 5 0 2 -33 46 -72 97 -40 52 -95 124 -123 160 -27 37 -52 67 -55 68 -3 0 -59 -70 -125 -155z"></path>
+				<path d="M899 857 l-96 -73 25 -47 c13 -26 25 -61 26 -79 l1 -33 -57 -3 c-32 -2 -58 -6 -58 -10 0 -13 239 -317 249 -317 8 0 251 310 251 320 0 3 -26 5 -58 5 l-58 0 -12 78 c-13 83 -76 225 -103 229 -7 2 -57 -30 -110 -70z"></path>
+			</g>
+		</svg>
+	</div>
+</div>
+
+<div class="imc-pl-alumneSessions">
+	<div class="imc-html-icona-fi">
+		<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+				<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+			</g>
+		</svg>
+	</div>
+	<div class="imc-html-sessio-dia">
+		<li class="imc-dia-sessio">
+			<div class="imc-dia">
+				<strong tabindex="0"></strong>
+				<div class="imc-cap-falta">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Falta para todo el día" aria-label="Falta para todo el día">
+							<div class="imc-check">
+								<input type="checkbox" tabindex="-1">
+								<span></span>
+							</div>
+						</label>
+					</div>
+					<label class="imc-justifica imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Justifica para todo el día" aria-label="Justifica para todo el día">
+						<p>Justifica</p>
+						<div class="imc-check">
+							<input type="checkbox" tabindex="-1" disabled="">
+							<span></span>
+						</div>
+					</label>
+				</div>
+			</div>
+			<ul class="imc-sessions"></ul>
+		</li>
+	</div>
+	<div class="imc-html-sessio-materia">
+		<li class="imc-sessio">
+			<div class="imc-icona">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M490 1093 c-12 -15 -19 -35 -17 -43 2 -9 66 -100 141 -203 75 -102 136 -189 136 -192 0 -3 -61 -90 -136 -192 -75 -103 -139 -194 -141 -203 -3 -10 7 -30 20 -46 43 -50 62 -34 234 201 84 115 156 217 159 227 3 9 0 27 -6 38 -21 39 -291 405 -312 423 -29 24 -53 21 -78 -10z"></path>
+					</g>
+				</svg>
+			</div>
+			<div class="imc-sessio" tabindex="0">
+				<span class="imc-sessio-hora"></span>
+				<span class="imc-sessio-materia"></span>
+			</div>
+			<ul class="imc-opcions">
+				<li class="imc-cap-comportament">
+					<a href="javascript:;" class="imc-bt-comportament" data-ids="" title="Comportamiento del alumno" aria-label="Comportamiento del alumno">&nbsp;</a>
+				</li>
+				<li class="imc-cap-falta">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Falta" aria-label="Falta">
+							<div class="imc-check">
+								<input type="checkbox" data-type="falta" tabindex="-1">
+								<span></span>
+							</div>
+						</label>
+					</div>
+				</li>
+				<li class="imc-cap-retard">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Retraso" aria-label="Retraso">
+							<div class="imc-check">
+								<input type="checkbox" data-type="retard" tabindex="-1">
+								<span></span>
+							</div>
+						</label>
+					</div>
+				</li>
+				<li class="imc-cap-justifica">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Justifica" aria-label="Justifica">
+							<p>Justifica</p>
+							<div class="imc-check">
+								<input type="checkbox" data-type="justifica" tabindex="-1" disabled="">
+								<span></span>
+							</div>
+						</label>
+					</div>
+				</li>
+			</ul>
+			<div class="imc-extraescolar imc-extraescolar-sense">
+				<a href="javascript:;" title="Extraescolar" aria-label="Extraescolar">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M600 1182 c-29 -16 -69 -80 -279 -448 -134 -236 -248 -445 -254 -465 -13 -45 1 -84 44 -125 l30 -29 507 -3 c477 -2 509 -1 541 16 45 24 74 76 68 123 -6 47 -490 904 -523 926 -38 24 -94 27 -134 5z m117 -217 c14 -10 24 -31 28 -59 10 -64 -22 -385 -41 -413 -17 -26 -55 -30 -74 -8 -15 18 -26 113 -36 302 l-7 141 26 26 c30 30 71 34 104 11z m8 -590 c30 -29 32 -64 5 -98 -26 -33 -63 -41 -99 -23 -46 25 -55 75 -20 120 28 35 80 36 114 1z"></path>
+						</g>
+					</svg>
+				</a>
+				<p></p>
+			</div>
+		</li>
+	</div>
+</div>
+
+<div class="imc-pl-comportaments">
+	<ul>
+		<li>
+			<p data-id="">
+				<span></span>
+			</p>
+		</li>
+	</ul>
+</div>
+
+<div class="imc-pl-dietari">
+	<ul class="imc-html-dietari-dia">
+		<li>
+			<h2 class="imc-dia" tabindex="0"></h2>
+			<ul class="imc-dietari-sessions"></ul>
+		</li>
+	</ul>
+	<ul class="imc-html-dietari-sessio">
+		<li>
+			<p class="imc-titol"></p>
+			<p class="imc-detall"></p>
+		</li>
+	</ul>
+</div>
+
+<div class="imc-pl-horari">
+	<div class="imc-html-horari-dia">
+		<li class="imc-horari-dia">
+			<h2 class="imc-dia" tabindex="0"></h2>
+			<ul class="imc-horari-sessions"></ul>
+		</li>
+	</div>
+	<div class="imc-html-horari-sessio">
+		<li>
+			<a href="javascript:;">
+				<p class="imc-hora"></p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi"></span>
+					<span class="imc-grup-nom"></span>
+				</p>
+				<p class="imc-materia"></p>
+			</a>
+		</li>
+	</div>
+</div>
+
+<div class="imc-pl-sessions-guardia">
+	<ul class="imc-html-guardia-sessio">
+		<li>
+			<a href="javascript:;">
+				<p class="imc-hora"></p>
+				<p class="imc-grup">
+					<span class="imc-grup-codi"></span>
+					<span class="imc-grup-docent"></span>
+				</p>
+				<p class="imc-materia"></p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="imc-pl-perAlumne">
+	<a href="https://docent.edu.gva.es/md-front/www/" data-id="" data-href="/tasques/diaries/perAlumne/alumne/">
+		<div class="imc-img">
+			<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+				<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+					<path d="M530 1227 c-48 -15 -113 -83 -128 -133 -15 -50 -15 -162 -1 -223 7 -30 7 -47 -1 -55 -23 -23 -7 -104 26 -131 6 -5 17 -27 24 -47 6 -20 22 -53 36 -73 19 -28 24 -49 24 -96 0 -85 -31 -115 -174 -174 -64 -27 -137 -66 -176 -95 -69 -51 -81 -71 -95 -162 l-6 -38 596 0 595 0 -4 22 c-3 13 -8 46 -11 73 -4 28 -11 58 -16 68 -11 19 -165 99 -277 142 -40 16 -88 42 -107 59 -33 29 -35 36 -37 96 -2 54 2 72 24 110 14 25 28 57 32 72 3 15 17 38 31 52 19 19 25 36 25 69 0 23 -5 48 -10 53 -8 8 -7 20 0 40 7 16 14 67 17 115 5 72 3 92 -15 132 -21 47 -69 87 -104 87 -10 0 -18 4 -18 9 0 5 -15 16 -34 25 -39 19 -161 20 -216 3z"></path>
+				</g>
+			</svg>
+		</div>
+		<div class="imc-dades">
+			<p></p>
+		</div>
+	</a>
+</div>
+
+<div class="imc-pl-perSessio">
+	<ul class="imc-html-sessio-dia">
+		<li class="imc-sessio" data-date="">
+			<p class="imc-dia"></p>
+			<ul class="imc-sessions-horari"></ul>
+		</li>
+	</ul>
+	<ul class="imc-html-sessio-hora">
+		<li>
+			<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+				<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+					<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+				</g>
+			</svg>
+			<a href="https://docent.edu.gva.es/md-front/www/" data-href="/perSessio/sessio/">
+				<span class="imc-hora"></span>
+				<span class="imc-materia"></span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="imc-pl-sessio">
+	<ul>
+		<li class="imc-alumne" data-id="" data-horari="" tabindex="0">
+						
+			<a class="imc-foto" title="Ficha del alumno" aria-label="Ficha del alumno">
+				<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+						<path d="M530 1227 c-48 -15 -113 -83 -128 -133 -15 -50 -15 -162 -1 -223 7 -30 7 -47 -1 -55 -23 -23 -7 -104 26 -131 6 -5 17 -27 24 -47 6 -20 22 -53 36 -73 19 -28 24 -49 24 -96 0 -85 -31 -115 -174 -174 -64 -27 -137 -66 -176 -95 -69 -51 -81 -71 -95 -162 l-6 -38 596 0 595 0 -4 22 c-3 13 -8 46 -11 73 -4 28 -11 58 -16 68 -11 19 -165 99 -277 142 -40 16 -88 42 -107 59 -33 29 -35 36 -37 96 -2 54 2 72 24 110 14 25 28 57 32 72 3 15 17 38 31 52 19 19 25 36 25 69 0 23 -5 48 -10 53 -8 8 -7 20 0 40 7 16 14 67 17 115 5 72 3 92 -15 132 -21 47 -69 87 -104 87 -10 0 -18 4 -18 9 0 5 -15 16 -34 25 -39 19 -161 20 -216 3z"></path>
+					</g>
+				</svg>
+			</a>
+			<div class="imc-nom">
+				<p></p>
+			</div>
+			<ul class="imc-opcions imc-opcions-una">
+				<li class="imc-cap-alumne">
+					<a href="javascript:;" class="imc-bt-alumne" title="Sesiones del alumno" aria-label="Sesiones del alumno">&nbsp;</a>
+				</li>
+				<li class="imc-cap-comportament">
+					<a href="javascript:;" class="imc-bt-comportament" data-ids="" title="Comportamiento del alumno" aria-label="Comportamiento del alumno">&nbsp;</a>
+				</li>
+				<li class="imc-cap-falta">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Falta" aria-label="Falta">
+							<div class="imc-check">
+								<input type="checkbox" data-type="falta" tabindex="-1">
+								<span></span>
+							</div>
+						</label>
+					</div>
+				</li>
+				<li class="imc-cap-retard">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Retraso" aria-label="Retraso">
+							<div class="imc-check">
+								<input type="checkbox" data-type="retard" tabindex="-1">
+								<span></span>
+							</div>
+						</label>
+					</div>
+				</li>
+				<li class="imc-cap-justifica">
+					<div>
+						<label class="imc-tasca-diaria-label" tabindex="0" role="checkbox" title="Justifica" aria-label="Justifica">
+							<p>Justifica</p>
+							<div class="imc-check">
+								<input type="checkbox" data-type="justifica" tabindex="-1" disabled="">
+								<span></span>
+							</div>
+						</label>
+					</div>
+				</li>
+			</ul>
+			<div class="imc-extraescolar imc-extraescolar-sense">
+				<a href="javascript:;" title="Extraescolar" aria-label="Extraescolar">
+					<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M600 1182 c-29 -16 -69 -80 -279 -448 -134 -236 -248 -445 -254 -465 -13 -45 1 -84 44 -125 l30 -29 507 -3 c477 -2 509 -1 541 16 45 24 74 76 68 123 -6 47 -490 904 -523 926 -38 24 -94 27 -134 5z m117 -217 c14 -10 24 -31 28 -59 10 -64 -22 -385 -41 -413 -17 -26 -55 -30 -74 -8 -15 18 -26 113 -36 302 l-7 141 26 26 c30 30 71 34 104 11z m8 -590 c30 -29 32 -64 5 -98 -26 -33 -63 -41 -99 -23 -46 25 -55 75 -20 120 28 35 80 36 114 1z"></path>
+						</g>
+					</svg>
+				</a>
+				<p></p>
+			</div>
+		
+		</li>
+	</ul>
+</div>
+
+<div class="imc-pl-sincroEnviaments">
+	<ul class="imc-html-dia">
+		<li class="imc-enviament">
+			<p class="imc-data"></p>
+			<ul class="imc-enviaments-dia"></ul>
+		</li>
+	</ul>
+	<ul class="imc-html-enviament">
+		<li><!-- imc-processat, imc-no-processat -->
+			<a href="javascript:;">
+				<span class="imc-icona"></span>
+				<p class="imc-hora"></p>
+				<p class="imc-estat"></p>
+				<p class="imc-detall"></p>
+			</a>
+		</li>
+	</ul>
+	<div class="imc-html-ico-processat">
+		<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+				<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+			</g>
+		</svg>
+	</div>
+	<div class="imc-html-ico-no-processat">
+		<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+				<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+			</g>
+		</svg>
+	</div>
+</div>
+
+<div class="imc-pl-alumnes">
+	<table>
+		<tbody>
+		<tr>
+			<td>
+				<a class="imc-nom">
+					<div class="imc-foto">
+						<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+								<path d="M530 1227 c-48 -15 -113 -83 -128 -133 -15 -50 -15 -162 -1 -223 7 -30 7 -47 -1 -55 -23 -23 -7 -104 26 -131 6 -5 17 -27 24 -47 6 -20 22 -53 36 -73 19 -28 24 -49 24 -96 0 -85 -31 -115 -174 -174 -64 -27 -137 -66 -176 -95 -69 -51 -81 -71 -95 -162 l-6 -38 596 0 595 0 -4 22 c-3 13 -8 46 -11 73 -4 28 -11 58 -16 68 -11 19 -165 99 -277 142 -40 16 -88 42 -107 59 -33 29 -35 36 -37 96 -2 54 2 72 24 110 14 25 28 57 32 72 3 15 17 38 31 52 19 19 25 36 25 69 0 23 -5 48 -10 53 -8 8 -7 20 0 40 7 16 14 67 17 115 5 72 3 92 -15 132 -21 47 -69 87 -104 87 -10 0 -18 4 -18 9 0 5 -15 16 -34 25 -39 19 -161 20 -216 3z"></path>
+							</g>
+						</svg>
+					</div>
+					<strong></strong>
+				</a>
+				<a class="imc-icona imc-telf" title="">
+					<svg viewBox="0 0 124.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M850 1237 c-371 -131 -682 -439 -814 -805 -32 -89 -33 -139 -5 -195 33 -65 119 -142 181 -163 62 -21 166 -23 179 -2 5 7 8 92 6 188 l-2 174 -42 11 c-84 20 -88 14 182 285 143 143 256 249 265 248 8 -2 25 -33 39 -71 18 -51 28 -67 43 -67 23 0 294 66 326 80 31 14 29 60 -7 137 -36 76 -104 146 -174 179 -64 30 -94 30 -177 1z"></path>
+						</g>
+					</svg>
+				</a>
+			</td>
+			<td>
+				<span></span>
+				<a class="imc-icona imc-pare-telf" title="">
+					<svg viewBox="0 0 124.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M850 1237 c-371 -131 -682 -439 -814 -805 -32 -89 -33 -139 -5 -195 33 -65 119 -142 181 -163 62 -21 166 -23 179 -2 5 7 8 92 6 188 l-2 174 -42 11 c-84 20 -88 14 182 285 143 143 256 249 265 248 8 -2 25 -33 39 -71 18 -51 28 -67 43 -67 23 0 294 66 326 80 31 14 29 60 -7 137 -36 76 -104 146 -174 179 -64 30 -94 30 -177 1z"></path>
+						</g>
+					</svg>
+				</a>
+				<a class="imc-icona imc-pare-correu" title="">
+					<svg viewBox="0 0 130.000000 109.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M149 943 c-11 -13 -15 -90 -17 -381 -2 -316 -1 -368 13 -388 l15 -24 499 0 c452 0 500 2 512 17 21 24 21 752 0 776 -12 15 -60 17 -511 17 -450 0 -499 -2 -511 -17z m831 -111 c0 -4 -72 -79 -160 -167 l-160 -160 -160 160 c-88 88 -160 163 -160 167 0 5 144 8 320 8 176 0 320 -3 320 -8z m110 -312 l0 -250 -430 0 -430 0 0 245 c0 135 3 245 7 245 3 0 95 -88 204 -195 127 -125 205 -195 218 -195 13 0 93 71 223 200 112 109 204 199 206 200 1 0 2 -112 2 -250z"></path>
+						</g>
+					</svg>
+				</a>
+			</td>
+			<td>
+				<span></span>
+				<a class="imc-icona imc-mare-telf" title="">
+					<svg viewBox="0 0 124.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M850 1237 c-371 -131 -682 -439 -814 -805 -32 -89 -33 -139 -5 -195 33 -65 119 -142 181 -163 62 -21 166 -23 179 -2 5 7 8 92 6 188 l-2 174 -42 11 c-84 20 -88 14 182 285 143 143 256 249 265 248 8 -2 25 -33 39 -71 18 -51 28 -67 43 -67 23 0 294 66 326 80 31 14 29 60 -7 137 -36 76 -104 146 -174 179 -64 30 -94 30 -177 1z"></path>
+						</g>
+					</svg>
+				</a>
+				<a class="imc-icona imc-mare-correu" title="">
+					<svg viewBox="0 0 130.000000 109.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+							<path d="M149 943 c-11 -13 -15 -90 -17 -381 -2 -316 -1 -368 13 -388 l15 -24 499 0 c452 0 500 2 512 17 21 24 21 752 0 776 -12 15 -60 17 -511 17 -450 0 -499 -2 -511 -17z m831 -111 c0 -4 -72 -79 -160 -167 l-160 -160 -160 160 c-88 88 -160 163 -160 167 0 5 144 8 320 8 176 0 320 -3 320 -8z m110 -312 l0 -250 -430 0 -430 0 0 245 c0 135 3 245 7 245 3 0 95 -88 204 -195 127 -125 205 -195 218 -195 13 0 93 71 223 200 112 109 204 199 206 200 1 0 2 -112 2 -250z"></path>
+						</g>
+					</svg>
+				</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="imc-pl-informes-safata">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<a href="https://docent.edu.gva.es/md-front/www/" download="">
+						<div class="imc-icona">
+							<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+								<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+									<path d="M480 1168 c-40 -67 -37 -124 21 -323 11 -38 8 -49 -43 -186 -85 -224 -99 -247 -183 -289 -98 -48 -133 -76 -166 -128 -34 -54 -36 -85 -9 -112 27 -27 51 -25 117 7 73 36 138 101 169 167 l24 53 196 33 c183 31 197 33 222 18 67 -40 189 -80 257 -85 59 -4 75 -1 103 16 17 11 32 28 32 37 0 27 -63 81 -111 94 -53 15 -204 29 -230 23 -10 -3 -33 4 -52 16 -47 29 -148 136 -191 204 -53 83 -58 100 -40 144 36 84 7 261 -52 320 -31 31 -41 29 -64 -9z m193 -605 c80 -83 88 -72 -81 -98 -151 -22 -144 -24 -116 33 13 26 33 85 45 131 l23 84 30 -39 c17 -22 62 -71 99 -111z"></path>
+								</g>
+							</svg>
+						</div>
+						<p class="imc-titol"></p>
+					</a>
+				</td>
+				<td>
+					<p class="imc-etiqueta">Solicitada</p>
+					<p class="imc-solicitada"><strong></strong><span></span></p>
+				</td>
+				<td>
+					<p class="imc-etiqueta">Disponible</p>
+					<p class="imc-disponible"><strong></strong><span></span></p>
+				</td>
+				<td>
+					<p class="imc-etiqueta">Se borrarà</p>
+					<p class="imc-sesborrara"><strong></strong><span></span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div></div>
+
+	<!-- icones -->
+	<div id="imc-icones" class="imc-icones" aria-hidden="true">
+<!-- tanca -->
+<div class="imc-icona-tanca">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M144 1168 c-55 -52 -74 -78 -74 -97 0 -21 40 -66 185 -211 118 -118 185 -192 185 -205 0 -13 -67 -87 -185 -205 -139 -139 -185 -191 -185 -209 0 -34 140 -174 169 -169 11 2 103 85 204 186 135 133 190 182 208 182 17 0 73 -50 209 -185 115 -114 194 -185 206 -185 25 0 174 149 174 174 0 12 -78 98 -191 212 l-192 193 19 28 c10 15 96 105 191 198 126 124 173 177 173 194 0 32 -139 171 -171 171 -18 0 -73 -49 -209 -185 -115 -115 -192 -185 -205 -185 -12 0 -90 70 -205 185 -133 132 -193 185 -209 185 -15 0 -49 -25 -97 -72z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- correcte -->
+<div class="imc-icona-correcte">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet" class="imc-ico-correcte">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- correcte doble -->
+<div class="imc-icona-correcte-doble">
+	<svg class="imc-correcte-1" viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+		</g>
+	</svg>
+	<svg class="imc-correcte-2" viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M805 768 c-153 -150 -285 -274 -294 -276 -9 -1 -68 50 -146 128 -71 71 -137 130 -145 130 -8 0 -46 -29 -85 -64 l-70 -63 77 -84 c200 -218 346 -361 366 -357 19 3 742 707 742 723 0 4 -28 36 -62 71 -39 40 -70 64 -83 64 -16 0 -107 -83 -300 -272z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- item accés -->
+<div class="imc-icona-item">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M490 1093 c-12 -15 -19 -35 -17 -43 2 -9 66 -100 141 -203 75 -102 136 -189 136 -192 0 -3 -61 -90 -136 -192 -75 -103 -139 -194 -141 -203 -3 -10 7 -30 20 -46 43 -50 62 -34 234 201 84 115 156 217 159 227 3 9 0 27 -6 38 -21 39 -291 405 -312 423 -29 24 -53 21 -78 -10z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- foto -->
+<div class="imc-icona-foto">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M530 1227 c-48 -15 -113 -83 -128 -133 -15 -50 -15 -162 -1 -223 7 -30 7 -47 -1 -55 -23 -23 -7 -104 26 -131 6 -5 17 -27 24 -47 6 -20 22 -53 36 -73 19 -28 24 -49 24 -96 0 -85 -31 -115 -174 -174 -64 -27 -137 -66 -176 -95 -69 -51 -81 -71 -95 -162 l-6 -38 596 0 595 0 -4 22 c-3 13 -8 46 -11 73 -4 28 -11 58 -16 68 -11 19 -165 99 -277 142 -40 16 -88 42 -107 59 -33 29 -35 36 -37 96 -2 54 2 72 24 110 14 25 28 57 32 72 3 15 17 38 31 52 19 19 25 36 25 69 0 23 -5 48 -10 53 -8 8 -7 20 0 40 7 16 14 67 17 115 5 72 3 92 -15 132 -21 47 -69 87 -104 87 -10 0 -18 4 -18 9 0 5 -15 16 -34 25 -39 19 -161 20 -216 3z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- alerta -->
+<div class="imc-icona-alerta">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M600 1182 c-29 -16 -69 -80 -279 -448 -134 -236 -248 -445 -254 -465 -13 -45 1 -84 44 -125 l30 -29 507 -3 c477 -2 509 -1 541 16 45 24 74 76 68 123 -6 47 -490 904 -523 926 -38 24 -94 27 -134 5z m117 -217 c14 -10 24 -31 28 -59 10 -64 -22 -385 -41 -413 -17 -26 -55 -30 -74 -8 -15 18 -26 113 -36 302 l-7 141 26 26 c30 30 71 34 104 11z m8 -590 c30 -29 32 -64 5 -98 -26 -33 -63 -41 -99 -23 -46 25 -55 75 -20 120 28 35 80 36 114 1z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- informacio -->
+<div class="imc-icona-informacio">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M695 1226 c-106 -46 -114 -179 -15 -235 94 -53 210 7 210 109 0 59 -24 98 -73 121 -49 22 -81 23 -122 5z"></path>
+			<path d="M481 825 c-72 -27 -76 -30 -85 -69 -6 -25 -5 -28 11 -21 10 4 39 10 64 12 39 4 50 2 69 -17 29 -29 25 -68 -30 -263 -71 -255 -52 -329 94 -359 92 -20 253 31 267 84 l7 27 -62 -6 c-87 -8 -106 4 -106 66 0 26 19 112 42 192 66 229 58 315 -33 361 -50 26 -158 23 -238 -7z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- sol·licituds -->
+<div class="imc-icona-solicitud">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M308 1172 c-57 -35 -58 -40 -58 -517 0 -481 1 -490 61 -520 43 -23 697 -22 740 1 55 28 59 53 59 376 l-1 293 -181 193 -181 192 -206 0 c-176 0 -210 -3 -233 -18z m392 -179 c0 -182 31 -213 213 -213 l107 0 -2 -282 -3 -283 -335 0 -335 0 -3 430 c-1 237 0 436 3 443 3 9 49 12 180 12 l175 0 0 -107z"></path>
+			<path d="M580 520 l0 -30 155 0 155 0 0 30 0 30 -155 0 -155 0 0 -30z"></path>
+			<path d="M420 350 l0 -30 235 0 235 0 0 30 0 30 -235 0 -235 0 0 -30z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- verifica -->
+<div class="imc-icona-verifica">
+	<svg width="475.099px" height="475.099px" viewBox="0 0 475.099 475.099" xml:space="preserve">
+		<g>
+			<path d="M442.829,265.532c9.328-14.089,13.986-29.598,13.986-46.538c0-19.607-7.225-36.637-21.687-51.117
+				c-14.469-14.465-31.601-21.696-51.394-21.696h-50.251c9.134-18.842,13.709-37.117,13.709-54.816c0-22.271-3.34-39.971-9.996-53.105
+				c-6.663-13.138-16.372-22.795-29.126-28.984C295.313,3.09,280.947,0,264.959,0c-9.712,0-18.274,3.521-25.697,10.566
+				c-8.183,7.993-14.084,18.274-17.699,30.837c-3.617,12.559-6.521,24.6-8.708,36.116c-2.187,11.515-5.569,19.652-10.135,24.41
+				c-9.329,10.088-19.511,22.273-30.551,36.547c-19.224,24.932-32.264,39.685-39.113,44.255H54.828
+				c-10.088,0-18.702,3.574-25.84,10.706c-7.135,7.139-10.705,15.752-10.705,25.841v182.723c0,10.089,3.566,18.699,10.705,25.838
+				c7.142,7.139,15.752,10.711,25.84,10.711h82.221c4.188,0,17.319,3.806,39.399,11.42c23.413,8.186,44.017,14.418,61.812,18.702
+				c17.797,4.284,35.832,6.427,54.106,6.427h26.545h10.284c26.836,0,48.438-7.666,64.809-22.99
+				c16.365-15.324,24.458-36.213,24.27-62.67c11.42-14.657,17.129-31.597,17.129-50.819c0-4.185-0.281-8.277-0.855-12.278
+				c7.23-12.748,10.854-26.453,10.854-41.11C445.399,278.379,444.544,271.809,442.829,265.532z M85.949,396.58
+				c-3.616,3.614-7.898,5.428-12.847,5.428c-4.95,0-9.233-1.813-12.85-5.428c-3.615-3.613-5.424-7.897-5.424-12.85
+				c0-4.948,1.805-9.229,5.424-12.847c3.621-3.617,7.9-5.425,12.85-5.425c4.949,0,9.231,1.808,12.847,5.425
+				c3.617,3.617,5.426,7.898,5.426,12.847C91.375,388.683,89.566,392.967,85.949,396.58z M414.145,242.419
+				c-4.093,8.754-9.186,13.227-15.276,13.415c2.854,3.237,5.235,7.762,7.139,13.562c1.902,5.807,2.847,11.087,2.847,15.848
+				c0,13.127-5.037,24.455-15.126,33.969c3.43,6.088,5.141,12.658,5.141,19.697c0,7.043-1.663,14.038-4.996,20.984
+				c-3.327,6.94-7.851,11.938-13.559,14.982c0.951,5.709,1.423,11.04,1.423,15.988c0,31.785-18.274,47.678-54.823,47.678h-34.536
+				c-24.94,0-57.483-6.943-97.648-20.841c-0.953-0.38-3.709-1.383-8.28-2.998s-7.948-2.806-10.138-3.565
+				c-2.19-0.767-5.518-1.861-9.994-3.285c-4.475-1.431-8.087-2.479-10.849-3.142c-2.758-0.664-5.901-1.283-9.419-1.855
+				c-3.52-0.571-6.519-0.855-8.993-0.855h-9.136V219.285h9.136c3.045,0,6.423-0.859,10.135-2.568c3.711-1.714,7.52-4.283,11.421-7.71
+				c3.903-3.427,7.564-6.805,10.992-10.138c3.427-3.33,7.233-7.517,11.422-12.559c4.187-5.046,7.47-9.089,9.851-12.135
+				c2.378-3.045,5.375-6.949,8.992-11.707c3.615-4.757,5.806-7.613,6.567-8.566c10.467-12.941,17.795-21.601,21.982-25.981
+				c7.804-8.182,13.466-18.603,16.987-31.261c3.525-12.66,6.427-24.604,8.703-35.832c2.282-11.229,5.903-19.321,10.858-24.27
+				c18.268,0,30.453,4.471,36.542,13.418c6.088,8.945,9.134,22.746,9.134,41.399c0,11.229-4.572,26.503-13.71,45.821
+				c-9.134,19.32-13.698,34.5-13.698,45.539h100.495c9.527,0,17.993,3.662,25.413,10.994c7.426,7.327,11.143,15.843,11.143,25.553
+				C420.284,225.943,418.237,233.653,414.145,242.419z"></path>
+		</g>
+</svg></div>
+
+<!-- sense matricula -->
+<div class="imc-icona-sense-matricula">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M1009 1223 c-14 -16 -49 -61 -78 -100 -29 -40 -55 -73 -57 -73 -3 0 -15 6 -27 14 -34 22 -139 46 -200 46 -162 0 -317 -83 -412 -219 -112 -163 -97 -403 36 -563 21 -26 39 -48 39 -51 0 -2 -25 -37 -55 -77 -60 -80 -67 -108 -33 -140 42 -39 61 -29 141 81 l49 66 71 -25 c141 -49 308 -27 431 57 61 42 131 123 160 186 37 77 49 147 44 246 -6 99 -33 169 -99 256 l-39 53 70 96 c38 53 70 102 70 109 0 23 -41 65 -64 65 -12 0 -34 -12 -47 -27z m-274 -248 c33 -9 61 -18 63 -20 7 -6 -16 -39 -158 -230 -69 -93 -154 -209 -188 -258 -35 -48 -65 -87 -68 -87 -13 0 -75 114 -90 164 -51 181 67 382 255 432 63 17 116 17 186 -1z m200 -139 c45 -59 68 -141 63 -223 -9 -140 -92 -255 -224 -311 -51 -21 -70 -24 -149 -20 -49 2 -100 10 -113 17 l-23 12 38 52 c21 29 76 104 123 168 47 64 121 166 165 227 44 61 83 111 87 111 4 1 19 -14 33 -33z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- qualificacio avanzada -->
+<div class="imc-icona-qualificacio-avanzada">
+	<svg viewBox="0 0 131.000000 131.000000" preserveAspectRatio="xMidYMid meet">
+		<g transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)" fill="none" stroke="none">
+			<path d="M262 1098 c-16 -20 -152 -366 -152 -388 0 -14 7 -20 24 -20 20 0 28 10 48 60 l23 60 76 0 76 0 26 -60 c20 -46 30 -60 47 -60 11 0 23 6 26 14 3 7 -30 101 -73 207 -77 191 -95 218 -121 187z"></path>
+			<path d="M444 1097 c-3 -8 28 -102 68 -208 67 -175 76 -194 98 -197 24 -3 29 8 99 192 70 185 79 226 49 226 -26 0 -35 -17 -87 -157 -30 -79 -56 -143 -60 -143 -3 0 -31 67 -61 148 -47 124 -59 148 -78 150 -12 2 -24 -3 -28 -11z"></path>
+			<path d="M912 787 c-18 -18 -32 -41 -32 -51 0 -10 37 -56 82 -102 95 -98 115 -104 167 -50 18 19 31 41 29 49 -1 8 -40 54 -85 101 -94 98 -112 104 -161 53z"></path>
+			<path d="M653 528 c-163 -164 -170 -175 -218 -331 -32 -107 -32 -127 -1 -127 33 0 193 53 254 84 67 34 322 299 322 335 0 31 -156 191 -186 191 -12 0 -79 -60 -171 -152z m-23 -243 c47 -47 71 -78 65 -84 -6 -5 -34 -19 -64 -31 l-54 -21 -44 43 c-32 31 -41 47 -37 63 13 42 43 105 51 105 5 0 42 -34 83 -75z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- observacions -->
+<div class="imc-icona-observacions">
+	<svg viewBox="0 0 512 512" xml:space="preserve" class="imc-ico-observacions">
+		<g>
+			<path fill="#ffffff" d="M256,96C144.341,96,47.559,161.021,0,256c47.559,94.979,144.341,160,256,160c111.656,0,208.439-65.021,256-160
+				C464.441,161.021,367.656,96,256,96z M382.225,180.852c30.082,19.187,55.572,44.887,74.719,75.148
+				c-19.146,30.261-44.639,55.961-74.719,75.148C344.428,355.257,300.779,368,256,368c-44.78,0-88.428-12.743-126.225-36.852
+				c-30.08-19.188-55.57-44.888-74.717-75.148c19.146-30.262,44.637-55.962,74.717-75.148c1.959-1.25,3.938-2.461,5.929-3.65
+				C130.725,190.866,128,205.613,128,221c0,70.691,57.308,128,128,128c70.691,0,128-57.309,128-128
+				c0-15.387-2.725-30.134-7.703-43.799C378.285,178.39,380.266,179.602,382.225,180.852z M256,205c0,26.51-21.49,48-48,48
+				s-48-21.49-48-48s21.49-48,48-48S256,178.49,256,205z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- llibre -->
+<div class="imc-icona-llibre">
+	<svg viewBox="0 0 459.319 459.319" xml:space="preserve" class="imc-ico-llibre">
+		<g>
+			<path d="M94.924,366.674h312.874c0.958,0,1.886-0.136,2.778-0.349c0.071,0,0.13,0.012,0.201,0.012
+				c6.679,0,12.105-5.42,12.105-12.104V12.105C422.883,5.423,417.456,0,410.777,0h-2.955H114.284H94.941
+				c-32.22,0-58.428,26.214-58.428,58.425c0,0.432,0.085,0.842,0.127,1.259c-0.042,29.755-0.411,303.166-0.042,339.109
+				c-0.023,0.703-0.109,1.389-0.109,2.099c0,30.973,24.252,56.329,54.757,58.245c0.612,0.094,1.212,0.183,1.847,0.183h317.683
+				c6.679,0,12.105-5.42,12.105-12.105v-45.565c0-6.68-5.427-12.105-12.105-12.105s-12.105,5.426-12.105,12.105v33.461H94.924
+				c-18.395,0-33.411-14.605-34.149-32.817c0.018-0.325,0.077-0.632,0.071-0.963c-0.012-0.532-0.03-1.359-0.042-2.459
+				C61.862,380.948,76.739,366.674,94.924,366.674z M103.178,58.425c0-6.682,5.423-12.105,12.105-12.105s12.105,5.423,12.105,12.105
+				V304.31c0,6.679-5.423,12.105-12.105,12.105s-12.105-5.427-12.105-12.105V58.425z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- ma -->
+<div class="imc-icona-ma">
+	<svg viewBox="0 0 456.814 456.814" xml:space="preserve" class="imc-ico-ma">
+		<g>
+			<path d="M441.11,252.677c10.468-11.99,15.704-26.169,15.704-42.54c0-14.846-5.432-27.692-16.259-38.547
+				c-10.849-10.854-23.695-16.278-38.541-16.278h-79.082c0.76-2.664,1.522-4.948,2.282-6.851c0.753-1.903,1.811-3.999,3.138-6.283
+				c1.328-2.285,2.283-3.999,2.852-5.139c3.425-6.468,6.047-11.801,7.857-15.985c1.807-4.192,3.606-9.9,5.42-17.133
+				c1.811-7.229,2.711-14.465,2.711-21.698c0-4.566-0.055-8.281-0.145-11.134c-0.089-2.855-0.574-7.139-1.423-12.85
+				c-0.862-5.708-2.006-10.467-3.43-14.272c-1.43-3.806-3.716-8.092-6.851-12.847c-3.142-4.764-6.947-8.613-11.424-11.565
+				c-4.476-2.95-10.184-5.424-17.131-7.421c-6.954-1.999-14.801-2.998-23.562-2.998c-4.948,0-9.227,1.809-12.847,5.426
+				c-3.806,3.806-7.047,8.564-9.709,14.272c-2.666,5.711-4.523,10.66-5.571,14.849c-1.047,4.187-2.238,9.994-3.565,17.415
+				c-1.719,7.998-2.998,13.752-3.86,17.273c-0.855,3.521-2.525,8.136-4.997,13.845c-2.477,5.713-5.424,10.278-8.851,13.706
+				c-6.28,6.28-15.891,17.701-28.837,34.259c-9.329,12.18-18.94,23.695-28.837,34.545c-9.899,10.852-17.131,16.466-21.698,16.847
+				c-4.755,0.38-8.848,2.331-12.275,5.854c-3.427,3.521-5.14,7.662-5.14,12.419v183.01c0,4.949,1.807,9.182,5.424,12.703
+				c3.615,3.525,7.898,5.38,12.847,5.571c6.661,0.191,21.698,4.374,45.111,12.566c14.654,4.941,26.12,8.706,34.4,11.272
+				c8.278,2.566,19.849,5.328,34.684,8.282c14.849,2.949,28.551,4.428,41.11,4.428h4.855h21.7h10.276
+				c25.321-0.38,44.061-7.806,56.247-22.268c11.036-13.135,15.697-30.361,13.99-51.679c7.422-7.042,12.565-15.984,15.416-26.836
+				c3.231-11.604,3.231-22.74,0-33.397c8.754-11.611,12.847-24.649,12.272-39.115C445.395,268.286,443.971,261.055,441.11,252.677z"></path>
+			<path d="M100.5,191.864H18.276c-4.952,0-9.235,1.809-12.851,5.426C1.809,200.905,0,205.188,0,210.137v182.732
+				c0,4.942,1.809,9.227,5.426,12.847c3.619,3.611,7.902,5.421,12.851,5.421H100.5c4.948,0,9.229-1.81,12.847-5.421
+				c3.616-3.62,5.424-7.904,5.424-12.847V210.137c0-4.949-1.809-9.231-5.424-12.847C109.73,193.672,105.449,191.864,100.5,191.864z
+				 M67.665,369.308c-3.616,3.521-7.898,5.281-12.847,5.281c-5.14,0-9.471-1.76-12.99-5.281c-3.521-3.521-5.281-7.85-5.281-12.99
+				c0-4.948,1.759-9.232,5.281-12.847c3.52-3.617,7.85-5.428,12.99-5.428c4.949,0,9.231,1.811,12.847,5.428
+				c3.617,3.614,5.426,7.898,5.426,12.847C73.091,361.458,71.286,365.786,67.665,369.308z"></path>
+		</g>
+	</svg>
+</div>
+
+<!-- renuncia -->
+<div class="imc-icona-renuncia">
+	<svg viewBox="0 0 212.982 212.982" xml:space="preserve" class="imc-ico-renuncia">
+	<g>
+		<path d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312
+			c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312
+			l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937
+			c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z"></path>
+	</g>
+</svg>
+</div></div>
+
+	<!-- media -->
+	<div class="imc-app-media" id="imc-app-media">
+		<div class="imc-am-mobil-h" id="imc-am-mobil-h">M.h</div>
+		<div class="imc-am-mobil-v" id="imc-am-mobil-v">M.v</div>
+		<div class="imc-am-tablet-h" id="imc-am-tablet-h">T.h</div>
+		<div class="imc-am-tablet-v" id="imc-am-tablet-v">T.v</div>
+		<div class="imc-am-escriptori-5x4" id="imc-am-escriptori-5x4">E.5x4</div>
+		<div class="imc-am-escriptori-hdr" id="imc-am-escriptori-hdr">E.hdr</div>
+		<div class="imc-am-escriptori-HD" id="imc-am-escriptori-HD">E.HD</div>
+	</div>
+	
+	<div class="imc-app-escriptori" id="imc-app-escriptori"></div>
+	<div class="imc-app-escriptori-5x4" id="imc-app-escriptori-5x4"></div>
+
+	
+	<div id="imc-app-no-compatible" class="imc-app-no-compatible">
+		
+		<div><img src="./horario_files/itaca_logo.png" alt="Itaca"></div>
+
+		<h1>Aquest navegador no és compatible amb l'aplicació / Este navegador no es compatible con la aplicación</h1>
+
+		<p>Actualitze a qualsevol d'aquest llistat / Actualice a cualquiera de este listado:
+		
+		</p><ul>
+			<li><a class="imc-nav-firefox" href="https://www.mozilla.org/es-ES/firefox/new/?utm_source=google&amp;utm_medium=paidsearch&amp;utm_campaign=sem2015Q4">Mozilla Firefox</a></li>
+			<li><a class="imc-nav-chrome" href="https://www.google.es/chrome">Chrome</a></li>
+			<li><a class="imc-nav-opera" href="http://www.opera.com/es">Opera</a></li>
+			<li><a class="imc-nav-safari" href="http://www.apple.com/es/safari/">Safari</a></li>
+			<li><a class="imc-nav-ie" href="http://windows.microsoft.com/es-es/internet-explorer/download-ie">Internet Explorer</a></li>
+		</ul>
+
+	</div>
+	
+
+
+</body></html>
